@@ -1,0 +1,9 @@
+<odoo>
+    <menuitem 
+        id="project_dashboard_menu"
+        name="Dashboard"
+        parent="project.menu_main_pm"
+        sequence="5"
+        action="action_project_kpi_dashboard"
+    />
+</odoo>

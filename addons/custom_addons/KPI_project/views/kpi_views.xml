@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- KPI Dashboard View (Form-based Dashboard) -->
+    <record id="view_project_kpi_dashboard" model="ir.ui.view">
+        <field name="name">Project KPI Dashboard</field>
+        <field name="model">project.project</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <h1 class="text-center">Project KPIs Dashboard</h1>
+                    <separator string="Key Metrics"/>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <h3>Total Projects</h3>
+                                <p class="text-muted">0</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <h3>Active Projects</h3>
+                                <p class="text-muted">0</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <h3>Completed Projects</h3>
+                                <p class="text-muted">0</p>
+                            </div>
+                        </div>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
