@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Action to open the KPI dashboard -->
+    <!-- Action: Task KPI dashboard -->
     <record id="action_project_kpi_dashboard" model="ir.actions.act_window">
         <field name="name">KPI Dashboard</field>
         <field name="res_model">project.project</field>
-        <field name="view_mode">form</field>
-        <field name="view_id" ref="view_project_kpi_dashboard"/>
+        <field name="view_mode">list,form</field>
+        <field name="view_ids" eval="[(5, 0, 0), (0, 0, {'view_mode': 'list', 'view_id': ref('view_project_kpi_dashboard')})]"/>
+        <field name="target">main</field>
+    </record>
+
+    <!-- Action: Manager Workload dashboard -->
+    <record id="action_project_manager_workload" model="ir.actions.act_window">
+        <field name="name">Manager Workload</field>
+        <field name="res_model">project.project</field>
+        <field name="view_mode">list,form</field>
+        <field name="view_ids" eval="[(5, 0, 0), (0, 0, {'view_mode': 'list', 'view_id': ref('view_project_manager_workload')})]"/>
+        <field name="context">{'group_by': ['user_id']}</field>
         <field name="target">main</field>
     </record>
 </odoo>

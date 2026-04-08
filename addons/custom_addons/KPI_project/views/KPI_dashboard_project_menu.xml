@@ -1,9 +1,22 @@
 <odoo>
-    <menuitem 
+    <menuitem
         id="project_dashboard_menu"
         name="Dashboard"
         parent="project.menu_main_pm"
         sequence="5"
+    />
+    <menuitem
+        id="project_kpi_tasks_menu"
+        name="Task KPIs"
+        parent="project_dashboard_menu"
+        sequence="1"
         action="action_project_kpi_dashboard"
+    />
+    <menuitem
+        id="project_manager_workload_menu"
+        name="Manager Workload"
+        parent="project_dashboard_menu"
+        sequence="2"
+        action="action_project_manager_workload"
     />
 </odoo>

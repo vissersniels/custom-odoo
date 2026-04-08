@@ -1,37 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- KPI Dashboard View (Form-based Dashboard) -->
+    <!-- Task KPI view: per-project task statistics -->
     <record id="view_project_kpi_dashboard" model="ir.ui.view">
         <field name="name">Project KPI Dashboard</field>
         <field name="model">project.project</field>
-        <field name="type">form</field>
+        <field name="type">list</field>
         <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <h1 class="text-center">Project KPIs Dashboard</h1>
-                    <separator string="Key Metrics"/>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="text-center">
-                                <h3>Total Projects</h3>
-                                <p class="text-muted">0</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="text-center">
-                                <h3>Active Projects</h3>
-                                <p class="text-muted">0</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="text-center">
-                                <h3>Completed Projects</h3>
-                                <p class="text-muted">0</p>
-                            </div>
-                        </div>
-                    </div>
-                </sheet>
-            </form>
+            <list string="Project KPIs" create="false" delete="false">
+                <field name="name" string="Project"/>
+                <field name="total_tasks" string="Total Tasks"/>
+                <field name="completed_tasks" string="Completed Tasks"/>
+                <field name="active_tasks" string="Active Tasks"/>
+                <field name="completion_rate" string="Completion Rate" widget="percentage"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Manager Workload view: one row per project showing manager and their load -->
+    <record id="view_project_manager_workload" model="ir.ui.view">
+        <field name="name">Project Manager Workload</field>
+        <field name="model">project.project</field>
+        <field name="type">list</field>
+        <field name="arch" type="xml">
+            <list string="Manager Workload" create="false" delete="false"
+                  default_group_by="user_id">
+                <field name="name" string="Project"/>
+                <field name="user_id" string="Project Manager"/>
+                <field name="manager_workload" string="Manager Active Projects"/>
+            </list>
         </field>
     </record>
 </odoo>
