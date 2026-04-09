@@ -115,12 +115,22 @@
             <field name="auto_delete" eval="True"/>
         </record>
 
+    </data>
+    <data>
         <!-- You have been assigned email -->
         <template id="project_message_user_assigned">
 <div>
     Dear <t t-esc="assignee_name"/>,
     <br/><br/>
     <span style="margin-top: 8px;">You have been assigned to the <t t-esc="model_description or 'document'"/> <t t-esc="object.display_name"/>.</span>
+    <t t-if="object.project_id">
+        <br/>
+        <span style="margin-top: 8px;">Project: <t t-esc="object.project_id.name"/>.</span>
+    </t>
+    <t t-if="object.project_id.partner_id">
+        <br/>
+        <span style="margin-top: 8px;">Customer: <t t-esc="object.project_id.partner_id.name"/>.</span>
+    </t>
 </div>
         </template>
 
