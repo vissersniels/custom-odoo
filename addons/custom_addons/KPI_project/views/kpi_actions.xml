@@ -13,9 +13,27 @@
     <record id="action_project_manager_workload" model="ir.actions.act_window">
         <field name="name">Manager Workload</field>
         <field name="res_model">project.project</field>
-        <field name="view_mode">list,form</field>
-        <field name="view_ids" eval="[(5, 0, 0), (0, 0, {'view_mode': 'list', 'view_id': ref('view_project_manager_workload')})]"/>
-        <field name="context">{'group_by': ['user_id']}</field>
+        <field name="view_mode">graph,pivot,list</field>
+        <field name="view_ids" eval="[
+            (5, 0, 0),
+            (0, 0, {'view_mode': 'graph',  'view_id': ref('view_project_manager_workload_graph')}),
+            (0, 0, {'view_mode': 'pivot',  'view_id': ref('view_project_manager_workload_pivot')}),
+            (0, 0, {'view_mode': 'list',   'view_id': ref('view_project_manager_workload')}),
+        ]"/>
+        <field name="target">main</field>
+    </record>
+
+    <!-- Action: Workload History (snapshots) -->
+    <record id="action_kpi_workload_history" model="ir.actions.act_window">
+        <field name="name">Workload History</field>
+        <field name="res_model">project.kpi.snapshot</field>
+        <field name="view_mode">graph,pivot,list</field>
+        <field name="view_ids" eval="[
+            (5, 0, 0),
+            (0, 0, {'view_mode': 'graph', 'view_id': ref('view_kpi_snapshot_line')}),
+            (0, 0, {'view_mode': 'pivot', 'view_id': ref('view_kpi_snapshot_pivot')}),
+            (0, 0, {'view_mode': 'list',  'view_id': ref('view_kpi_snapshot_list')}),
+        ]"/>
         <field name="target">main</field>
     </record>
 </odoo>

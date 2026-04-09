@@ -19,4 +19,11 @@
         sequence="2"
         action="action_project_manager_workload"
     />
+    <menuitem
+        id="project_workload_history_menu"
+        name="Workload History"
+        parent="project_dashboard_menu"
+        sequence="3"
+        action="action_kpi_workload_history"
+    />
 </odoo>

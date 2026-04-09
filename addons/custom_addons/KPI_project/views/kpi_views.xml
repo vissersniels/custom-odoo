@@ -16,7 +16,7 @@
         </field>
     </record>
 
-    <!-- Manager Workload view: one row per project showing manager and their load -->
+    <!-- Manager Workload list view: one row per project showing manager and their load -->
     <record id="view_project_manager_workload" model="ir.ui.view">
         <field name="name">Project Manager Workload</field>
         <field name="model">project.project</field>
@@ -27,6 +27,83 @@
                 <field name="name" string="Project"/>
                 <field name="user_id" string="Project Manager"/>
                 <field name="manager_workload" string="Manager Active Projects"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Manager Workload graph view: project count per manager over time -->
+    <record id="view_project_manager_workload_graph" model="ir.ui.view">
+        <field name="name">Project Manager Workload Graph</field>
+        <field name="model">project.project</field>
+        <field name="arch" type="xml">
+            <graph string="Manager Workload Over Time" type="bar" stacked="1">
+                <field name="date_start" interval="month" type="row" string="Month"/>
+                <field name="user_id" type="row" string="Project Manager"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Manager Workload pivot view: tabular breakdown by manager and month -->
+    <record id="view_project_manager_workload_pivot" model="ir.ui.view">
+        <field name="name">Project Manager Workload Pivot</field>
+        <field name="model">project.project</field>
+        <field name="arch" type="xml">
+            <pivot string="Manager Workload Over Time" display_quantity="true">
+                <field name="user_id" type="row" string="Project Manager"/>
+                <field name="date_start" interval="month" type="col" string="Month"/>
+            </pivot>
+        </field>
+    </record>
+
+    <!-- Snapshot line chart: workload per manager over time -->
+    <record id="view_kpi_snapshot_line" model="ir.ui.view">
+        <field name="name">KPI Snapshot Line</field>
+        <field name="model">project.kpi.snapshot</field>
+        <field name="arch" type="xml">
+            <graph string="Manager Workload Over Time" type="line">
+                <field name="snapshot_date" interval="week" type="row" string="Week"/>
+                <field name="user_id" type="row" string="Project Manager"/>
+                <field name="workload" type="measure" string="Active Projects"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Snapshot bar chart: historical workload per manager per week -->
+    <record id="view_kpi_snapshot_graph" model="ir.ui.view">
+        <field name="name">KPI Snapshot Graph</field>
+        <field name="model">project.kpi.snapshot</field>
+        <field name="arch" type="xml">
+            <graph string="Manager Workload History" type="bar" stacked="1">
+                <field name="snapshot_date" interval="week" type="row" string="Week"/>
+                <field name="user_id" type="row" string="Project Manager"/>
+                <field name="workload" type="measure" string="Active Projects"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Snapshot pivot: tabular breakdown of historical workload -->
+    <record id="view_kpi_snapshot_pivot" model="ir.ui.view">
+        <field name="name">KPI Snapshot Pivot</field>
+        <field name="model">project.kpi.snapshot</field>
+        <field name="arch" type="xml">
+            <pivot string="Manager Workload History" display_quantity="true">
+                <field name="user_id" type="row" string="Project Manager"/>
+                <field name="snapshot_date" interval="week" type="col" string="Week"/>
+                <field name="workload" type="measure" string="Active Projects"/>
+            </pivot>
+        </field>
+    </record>
+
+    <!-- Snapshot list: raw snapshot records -->
+    <record id="view_kpi_snapshot_list" model="ir.ui.view">
+        <field name="name">KPI Snapshot List</field>
+        <field name="model">project.kpi.snapshot</field>
+        <field name="arch" type="xml">
+            <list string="Workload Snapshots" create="false" delete="false"
+                  default_order="snapshot_date desc">
+                <field name="snapshot_date" string="Date"/>
+                <field name="user_id" string="Project Manager"/>
+                <field name="workload" string="Active Projects"/>
             </list>
         </field>
     </record>

@@ -3,6 +3,36 @@ from odoo.addons.project.models.project_task import CLOSED_STATES
 from odoo.osv.expression import AND
 
 
+class ProjectKPISnapshot(models.Model):
+    _name = 'project.kpi.snapshot'
+    _description = 'Project Manager Workload Snapshot'
+    _order = 'snapshot_date desc, user_id'
+
+    snapshot_date = fields.Date(string='Snapshot Date', required=True, index=True)
+    user_id = fields.Many2one('res.users', string='Project Manager', required=True, index=True)
+    workload = fields.Integer(string='Active Projects')
+
+    @api.model
+    def _take_snapshot(self):
+        """
+        Called weekly by ir.cron.
+        Records, for each manager with at least one active project, how many
+        active projects they are currently responsible for.
+        """
+        today = fields.Date.context_today(self)
+        result = self.env['project.project']._read_group(
+            [('active', '=', True), ('user_id', '!=', False)],
+            ['user_id'],
+            ['__count'],
+        )
+        rows = [
+            {'snapshot_date': today, 'user_id': user.id, 'workload': count}
+            for user, count in result
+        ]
+        if rows:
+            self.create(rows)
+
+
 class ProjectKPI(models.Model):
     _inherit = 'project.project'
 
