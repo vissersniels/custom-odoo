@@ -8,6 +8,12 @@
             <xpath expr="//page[@name='internal_notes']" position="replace">
                 <page string="Internal Notes" name="internal_notes">
 
+                    <!-- ── FREE-TEXT INTERNAL NOTES ─────────────────────── -->
+                    <field name="description"
+                           placeholder="Add a note..."
+                           options="{'collaborative': true}"
+                           style="min-height: 1em;"/>
+
                     <!-- ── COMMERCIAL LEVEL ─────────────────────────────── -->
                     <separator string="Commercial Level"/>
                     <div class="alert alert-info mb-3" role="status">
