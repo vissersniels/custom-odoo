@@ -1,3 +1,5 @@
+from datetime import timedelta
+
 from odoo import models, fields, api
 from odoo.addons.project.models.project_task import CLOSED_STATES
 from odoo.osv.expression import AND
@@ -85,4 +87,43 @@ class ProjectKPI(models.Model):
         workload_by_manager = {user.id: count for user, count in result}
         for project in self:
             project.manager_workload = workload_by_manager.get(project.user_id.id, 0)
+
+
+class ProjectTasksCompletedSnapshot(models.Model):
+    _name = 'project.kpi.tasks.completed.snapshot'
+    _description = 'Tasks Completed Per Week Snapshot'
+    _order = 'snapshot_date desc, user_id'
+
+    snapshot_date = fields.Date(string='Week Start', required=True, index=True)
+    user_id = fields.Many2one('res.users', string='Assignee', required=True, index=True)
+    tasks_completed = fields.Integer(string='Tasks Completed')
+
+    @api.model
+    def _take_snapshot(self):
+        """
+        Called weekly by ir.cron.
+        Records, for each assignee, how many tasks they completed (transitioned to
+        a closed state) during the past seven days.
+        """
+        today = fields.Date.context_today(self)
+        week_start = today - timedelta(days=7)
+
+        result = self.env['project.task']._read_group(
+            [
+                ('state', 'in', list(CLOSED_STATES)),
+                ('date_last_stage_update', '>=', week_start),
+                ('date_last_stage_update', '<', today),
+                ('display_in_project', '=', True),
+                ('user_ids', '!=', False),
+            ],
+            ['user_ids'],
+            ['__count'],
+        )
+        rows = [
+            {'snapshot_date': week_start, 'user_id': user.id, 'tasks_completed': count}
+            for user, count in result
+            if user.id
+        ]
+        if rows:
+            self.create(rows)
 

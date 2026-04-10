@@ -36,4 +36,18 @@
         ]"/>
         <field name="target">main</field>
     </record>
+
+    <!-- Action: Tasks Completed Per Week History -->
+    <record id="action_kpi_tasks_completed_history" model="ir.actions.act_window">
+        <field name="name">Tasks Completed Per Week</field>
+        <field name="res_model">project.kpi.tasks.completed.snapshot</field>
+        <field name="view_mode">graph,pivot,list</field>
+        <field name="view_ids" eval="[
+            (5, 0, 0),
+            (0, 0, {'view_mode': 'graph', 'view_id': ref('view_kpi_tasks_completed_line')}),
+            (0, 0, {'view_mode': 'pivot', 'view_id': ref('view_kpi_tasks_completed_pivot')}),
+            (0, 0, {'view_mode': 'list',  'view_id': ref('view_kpi_tasks_completed_list')}),
+        ]"/>
+        <field name="target">main</field>
+    </record>
 </odoo>

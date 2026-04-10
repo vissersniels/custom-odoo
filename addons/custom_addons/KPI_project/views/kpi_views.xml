@@ -107,4 +107,59 @@
             </list>
         </field>
     </record>
+
+    <!-- ── Tasks Completed Per Week ──────────────────────────────────────── -->
+
+    <!-- Line chart: tasks completed per assignee per week -->
+    <record id="view_kpi_tasks_completed_line" model="ir.ui.view">
+        <field name="name">KPI Tasks Completed Line</field>
+        <field name="model">project.kpi.tasks.completed.snapshot</field>
+        <field name="arch" type="xml">
+            <graph string="Tasks Completed Per Week" type="line">
+                <field name="snapshot_date" interval="week" type="row" string="Week"/>
+                <field name="user_id" type="row" string="Assignee"/>
+                <field name="tasks_completed" type="measure" string="Tasks Completed"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Bar chart: stacked tasks completed per assignee per week -->
+    <record id="view_kpi_tasks_completed_graph" model="ir.ui.view">
+        <field name="name">KPI Tasks Completed Bar</field>
+        <field name="model">project.kpi.tasks.completed.snapshot</field>
+        <field name="arch" type="xml">
+            <graph string="Tasks Completed History" type="bar" stacked="1">
+                <field name="snapshot_date" interval="week" type="row" string="Week"/>
+                <field name="user_id" type="row" string="Assignee"/>
+                <field name="tasks_completed" type="measure" string="Tasks Completed"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Pivot: assignees as rows, weeks as columns -->
+    <record id="view_kpi_tasks_completed_pivot" model="ir.ui.view">
+        <field name="name">KPI Tasks Completed Pivot</field>
+        <field name="model">project.kpi.tasks.completed.snapshot</field>
+        <field name="arch" type="xml">
+            <pivot string="Tasks Completed History" display_quantity="true">
+                <field name="user_id" type="row" string="Assignee"/>
+                <field name="snapshot_date" interval="week" type="col" string="Week"/>
+                <field name="tasks_completed" type="measure" string="Tasks Completed"/>
+            </pivot>
+        </field>
+    </record>
+
+    <!-- List: raw snapshot records -->
+    <record id="view_kpi_tasks_completed_list" model="ir.ui.view">
+        <field name="name">KPI Tasks Completed List</field>
+        <field name="model">project.kpi.tasks.completed.snapshot</field>
+        <field name="arch" type="xml">
+            <list string="Tasks Completed Snapshots" create="false" delete="false"
+                  default_order="snapshot_date desc">
+                <field name="snapshot_date" string="Week Start"/>
+                <field name="user_id" string="Assignee"/>
+                <field name="tasks_completed" string="Tasks Completed"/>
+            </list>
+        </field>
+    </record>
 </odoo>

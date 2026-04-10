@@ -26,4 +26,11 @@
         sequence="3"
         action="action_kpi_workload_history"
     />
+    <menuitem
+        id="project_tasks_completed_history_menu"
+        name="Tasks Completed Per Week"
+        parent="project_dashboard_menu"
+        sequence="4"
+        action="action_kpi_tasks_completed_history"
+    />
 </odoo>

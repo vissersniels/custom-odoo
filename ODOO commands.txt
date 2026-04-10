@@ -1,0 +1,16 @@
+# Odoo Commands
+
+## Startup
+
+python odoo-bin -c odoo.conf
+
+
+## Update Modules
+
+
+python odoo-bin -u <module> -d niels
+
+
+## Upgrade Modules
+
+python odoo-bin -u <module> -d niels --config=odoo.conf  
