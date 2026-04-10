@@ -50,4 +50,18 @@
         ]"/>
         <field name="target">main</field>
     </record>
+
+    <!-- Action: Task Planning Completeness -->
+    <record id="action_kpi_planning_completeness" model="ir.actions.act_window">
+        <field name="name">Task Planning Completeness</field>
+        <field name="res_model">project.kpi.planning.snapshot</field>
+        <field name="view_mode">graph,pivot,list</field>
+        <field name="view_ids" eval="[
+            (5, 0, 0),
+            (0, 0, {'view_mode': 'graph', 'view_id': ref('view_kpi_planning_line')}),
+            (0, 0, {'view_mode': 'pivot', 'view_id': ref('view_kpi_planning_pivot')}),
+            (0, 0, {'view_mode': 'list',  'view_id': ref('view_kpi_planning_list')}),
+        ]"/>
+        <field name="target">main</field>
+    </record>
 </odoo>

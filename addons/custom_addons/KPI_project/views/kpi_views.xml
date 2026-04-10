@@ -162,4 +162,60 @@
             </list>
         </field>
     </record>
+
+    <!-- ── Task Planning Completeness ───────────────────────────────────── -->
+
+    <!-- Line chart: completeness rate over time -->
+    <record id="view_kpi_planning_line" model="ir.ui.view">
+        <field name="name">KPI Planning Completeness Line</field>
+        <field name="model">project.kpi.planning.snapshot</field>
+        <field name="arch" type="xml">
+            <graph string="Task Planning Completeness Over Time" type="line">
+                <field name="snapshot_date" interval="day" type="row" string="Date"/>
+                <field name="completeness_rate" type="measure" string="Completeness Rate (%)"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Bar chart: planned vs total projects per day -->
+    <record id="view_kpi_planning_bar" model="ir.ui.view">
+        <field name="name">KPI Planning Completeness Bar</field>
+        <field name="model">project.kpi.planning.snapshot</field>
+        <field name="arch" type="xml">
+            <graph string="Task Planning Completeness" type="bar">
+                <field name="snapshot_date" interval="day" type="row" string="Date"/>
+                <field name="planned_projects" type="measure" string="Projects with Planned Tasks"/>
+                <field name="total_projects" type="measure" string="Total Active Projects"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Pivot: dates as columns, metrics as measures -->
+    <record id="view_kpi_planning_pivot" model="ir.ui.view">
+        <field name="name">KPI Planning Completeness Pivot</field>
+        <field name="model">project.kpi.planning.snapshot</field>
+        <field name="arch" type="xml">
+            <pivot string="Task Planning Completeness" display_quantity="true">
+                <field name="snapshot_date" interval="day" type="col" string="Date"/>
+                <field name="completeness_rate" type="measure" string="Completeness Rate (%)"/>
+                <field name="planned_projects" type="measure" string="Projects with Planned Tasks"/>
+                <field name="total_projects" type="measure" string="Total Active Projects"/>
+            </pivot>
+        </field>
+    </record>
+
+    <!-- List: raw planning snapshot records -->
+    <record id="view_kpi_planning_list" model="ir.ui.view">
+        <field name="name">KPI Planning Completeness List</field>
+        <field name="model">project.kpi.planning.snapshot</field>
+        <field name="arch" type="xml">
+            <list string="Planning Completeness Snapshots" create="false" delete="false"
+                  default_order="snapshot_date desc">
+                <field name="snapshot_date" string="Date"/>
+                <field name="total_projects" string="Total Active Projects"/>
+                <field name="planned_projects" string="Projects with Planned Tasks"/>
+                <field name="completeness_rate" string="Completeness Rate (%)"/>
+            </list>
+        </field>
+    </record>
 </odoo>

@@ -127,3 +127,66 @@ class ProjectTasksCompletedSnapshot(models.Model):
         if rows:
             self.create(rows)
 
+
+class ProjectKPIPlanningSnapshot(models.Model):
+    _name = 'project.kpi.planning.snapshot'
+    _description = 'Task Planning Completeness Snapshot'
+    _order = 'snapshot_date desc'
+
+    snapshot_date = fields.Date(string='Snapshot Date', required=True, index=True)
+    total_projects = fields.Integer(string='Total Active Projects')
+    planned_projects = fields.Integer(string='Projects with Planned Tasks')
+    # Stored as 0.0–100.0 so graph Y-axis reads as a percentage directly
+    completeness_rate = fields.Float(string='Completeness Rate (%)', digits=(5, 2))
+
+    @api.model
+    def _take_snapshot(self):
+        """
+        Called daily by ir.cron.
+        A project counts as "planned" when it has at least one task with:
+          - at least one assignee (user_ids)
+          - a deadline (date_deadline)
+          - a state explicitly set (state is always populated in Odoo,
+            so this is satisfied by any task that meets the above two conditions)
+        The snapshot stores the total active project count, how many of those
+        are "planned", and the resulting completeness percentage.
+        """
+        today = fields.Date.context_today(self)
+
+        total_result = self.env['project.project']._read_group(
+            [('active', '=', True)],
+            [],
+            ['__count'],
+        )
+        total = total_result[0][0] if total_result else 0
+
+        if total == 0:
+            self.create({
+                'snapshot_date': today,
+                'total_projects': 0,
+                'planned_projects': 0,
+                'completeness_rate': 0.0,
+            })
+            return
+
+        # One row per distinct project that has at least 1 qualifying task
+        planned_result = self.env['project.task']._read_group(
+            [
+                ('display_in_project', '=', True),
+                ('project_id.active', '=', True),
+                ('user_ids', '!=', False),
+                ('date_deadline', '!=', False),
+                ('state', '!=', False),
+            ],
+            ['project_id'],
+            ['__count'],
+        )
+        planned = len(planned_result)
+
+        self.create({
+            'snapshot_date': today,
+            'total_projects': total,
+            'planned_projects': planned,
+            'completeness_rate': (planned / total) * 100.0,
+        })
+

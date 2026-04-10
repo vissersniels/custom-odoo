@@ -33,4 +33,11 @@
         sequence="4"
         action="action_kpi_tasks_completed_history"
     />
+    <menuitem
+        id="project_kpi_planning_completeness_menu"
+        name="Task Planning Completeness"
+        parent="project_dashboard_menu"
+        sequence="5"
+        action="action_kpi_planning_completeness"
+    />
 </odoo>

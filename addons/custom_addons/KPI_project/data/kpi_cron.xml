@@ -19,4 +19,14 @@
         <field name="interval_type">weeks</field>
         <field name="active">True</field>
     </record>
+
+    <record id="ir_cron_project_kpi_planning_snapshot" model="ir.cron">
+        <field name="name">Project KPI: Take task planning completeness snapshot</field>
+        <field name="model_id" ref="model_project_kpi_planning_snapshot"/>
+        <field name="state">code</field>
+        <field name="code">model._take_snapshot()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="active">True</field>
+    </record>
 </odoo>
