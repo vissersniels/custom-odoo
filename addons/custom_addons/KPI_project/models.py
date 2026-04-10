@@ -190,3 +190,73 @@ class ProjectKPIPlanningSnapshot(models.Model):
             'completeness_rate': (planned / total) * 100.0,
         })
 
+
+class ProjectKPIStalenessSnapshot(models.Model):
+    _name = 'project.kpi.staleness.snapshot'
+    _description = 'Project Staleness Snapshot'
+    _order = 'snapshot_date desc, project_id'
+
+    snapshot_date = fields.Date(string='Snapshot Date', required=True, index=True)
+    project_id = fields.Many2one(
+        'project.project', string='Project',
+        required=True, index=True, ondelete='cascade',
+    )
+    days_since_last_update = fields.Float(string='Days Since Last Update', digits=(10, 1))
+
+    @api.model
+    def _take_snapshot(self):
+        """
+        Called daily by ir.cron.
+        For each active project, computes how many days have passed since it was
+        last touched.  'Last touched' is the most recent of:
+          - the project's own write_date (field edits on the project record)
+          - the max write_date of its tasks (task field edits)
+          - the max date of messages posted directly on the project chatter
+            (notes, emails, log entries)
+        """
+        today_date = fields.Date.context_today(self)
+        now = fields.Datetime.now()
+
+        projects = self.env['project.project'].search([('active', '=', True)])
+        if not projects:
+            return
+
+        project_ids = projects.ids
+
+        # Latest task write_date per project
+        task_result = self.env['project.task']._read_group(
+            [('project_id', 'in', project_ids), ('display_in_project', '=', True)],
+            ['project_id'],
+            ['write_date:max'],
+        )
+        task_last = {project.id: max_dt for project, max_dt in task_result if max_dt}
+
+        # Latest chatter message date per project (notes, emails, internal logs)
+        msg_result = self.env['mail.message'].sudo()._read_group(
+            [('res_model', '=', 'project.project'), ('res_id', 'in', project_ids)],
+            ['res_id'],
+            ['date:max'],
+        )
+        msg_last = {res_id: max_date for res_id, max_date in msg_result if max_date}
+
+        rows = []
+        for project in projects:
+            candidates = [dt for dt in [
+                project.write_date,
+                task_last.get(project.id),
+                msg_last.get(project.id),
+            ] if dt]
+            if not candidates:
+                continue
+            last_update = max(candidates)
+            delta = now - last_update
+            days = delta.total_seconds() / 86400.0
+            rows.append({
+                'snapshot_date': today_date,
+                'project_id': project.id,
+                'days_since_last_update': max(0.0, days),
+            })
+
+        if rows:
+            self.create(rows)
+

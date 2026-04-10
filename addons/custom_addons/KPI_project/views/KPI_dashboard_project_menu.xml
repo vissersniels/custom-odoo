@@ -40,4 +40,11 @@
         sequence="5"
         action="action_kpi_planning_completeness"
     />
+    <menuitem
+        id="project_kpi_staleness_menu"
+        name="Avg Time Since Last Update"
+        parent="project_dashboard_menu"
+        sequence="6"
+        action="action_kpi_staleness"
+    />
 </odoo>

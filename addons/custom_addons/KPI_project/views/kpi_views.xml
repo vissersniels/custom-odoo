@@ -218,4 +218,57 @@
             </list>
         </field>
     </record>
+
+    <!-- ── Project Staleness (avg days since last update) ───────────────── -->
+
+    <!-- Line chart: average days since last update per day -->
+    <record id="view_kpi_staleness_line" model="ir.ui.view">
+        <field name="name">KPI Staleness Line</field>
+        <field name="model">project.kpi.staleness.snapshot</field>
+        <field name="arch" type="xml">
+            <graph string="Avg Days Since Last Project Update" type="line">
+                <field name="snapshot_date" interval="day" type="row" string="Date"/>
+                <field name="days_since_last_update" type="measure" string="Avg Days Since Last Update"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Bar chart: staleness per project on the latest snapshot -->
+    <record id="view_kpi_staleness_bar" model="ir.ui.view">
+        <field name="name">KPI Staleness Bar</field>
+        <field name="model">project.kpi.staleness.snapshot</field>
+        <field name="arch" type="xml">
+            <graph string="Days Since Last Update Per Project" type="bar">
+                <field name="project_id" type="row" string="Project"/>
+                <field name="days_since_last_update" type="measure" string="Days Since Last Update"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Pivot: projects as rows, dates as columns -->
+    <record id="view_kpi_staleness_pivot" model="ir.ui.view">
+        <field name="name">KPI Staleness Pivot</field>
+        <field name="model">project.kpi.staleness.snapshot</field>
+        <field name="arch" type="xml">
+            <pivot string="Project Staleness History" display_quantity="true">
+                <field name="project_id" type="row" string="Project"/>
+                <field name="snapshot_date" interval="week" type="col" string="Week"/>
+                <field name="days_since_last_update" type="measure" string="Days Since Last Update"/>
+            </pivot>
+        </field>
+    </record>
+
+    <!-- List: raw staleness snapshot records -->
+    <record id="view_kpi_staleness_list" model="ir.ui.view">
+        <field name="name">KPI Staleness List</field>
+        <field name="model">project.kpi.staleness.snapshot</field>
+        <field name="arch" type="xml">
+            <list string="Staleness Snapshots" create="false" delete="false"
+                  default_order="snapshot_date desc, days_since_last_update desc">
+                <field name="snapshot_date" string="Date"/>
+                <field name="project_id" string="Project"/>
+                <field name="days_since_last_update" string="Days Since Last Update" digits="[10,1]"/>
+            </list>
+        </field>
+    </record>
 </odoo>

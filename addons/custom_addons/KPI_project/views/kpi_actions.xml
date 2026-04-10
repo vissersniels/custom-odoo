@@ -64,4 +64,18 @@
         ]"/>
         <field name="target">main</field>
     </record>
+
+    <!-- Action: Project Staleness -->
+    <record id="action_kpi_staleness" model="ir.actions.act_window">
+        <field name="name">Avg Time Since Last Update</field>
+        <field name="res_model">project.kpi.staleness.snapshot</field>
+        <field name="view_mode">graph,pivot,list</field>
+        <field name="view_ids" eval="[
+            (5, 0, 0),
+            (0, 0, {'view_mode': 'graph', 'view_id': ref('view_kpi_staleness_line')}),
+            (0, 0, {'view_mode': 'pivot', 'view_id': ref('view_kpi_staleness_pivot')}),
+            (0, 0, {'view_mode': 'list',  'view_id': ref('view_kpi_staleness_list')}),
+        ]"/>
+        <field name="target">main</field>
+    </record>
 </odoo>
