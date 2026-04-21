@@ -976,7 +976,8 @@ class TransactionCase(BaseCase):
             filename = inspect.getsourcefile(caller)
 
             # special case / fastpath because this does model alterations everywhere
-            if filename.endswith('odoo/models.py'):
+            # Use os.sep-agnostic comparison so this also works on Windows.
+            if filename.replace(os.sep, '/').endswith('odoo/models.py'):
                 actual_setattr(model, key, value)
                 return
 
