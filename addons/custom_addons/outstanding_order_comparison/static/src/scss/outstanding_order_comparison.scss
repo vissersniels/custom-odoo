@@ -1,0 +1,111 @@
+.o_ooc_upload_grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.o_ooc_upload_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.o_ooc_upload_title {
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.o_ooc_upload_widget {
+    width: 100%;
+    display: block;
+}
+
+.o_ooc_upload_widget .o_field_widget,
+.o_ooc_upload_widget .o_ooc_drop_field {
+    width: 100%;
+}
+
+.o_ooc_drop_field {
+    border: 2px dashed #9aa4b2;
+    border-radius: 12px;
+    background: #f8fafc;
+    padding: 1rem;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.o_ooc_drop_field_dragging {
+    border-color: #0d6efd;
+    background: #eaf2ff;
+}
+
+.o_ooc_drop_field_inner {
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    gap: 0.5rem;
+}
+
+.o_ooc_drop_icon {
+    font-size: 1.75rem;
+    color: #0d6efd;
+}
+
+.o_ooc_drop_title {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.o_ooc_drop_hint {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.o_ooc_drop_actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.o_ooc_drop_uploading {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.o_ooc_higo_date_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+.o_ooc_higo_date_label {
+    text-align: center;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.o_ooc_higo_date_field,
+.o_ooc_higo_date_section .o_field_widget {
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+}
+
+.o_ooc_higo_date_section .o_input {
+    text-align: center;
+}
+
+@media (max-width: 991.98px) {
+    .o_ooc_upload_grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="outstanding_order_comparison.DragDropBinaryField">
+        <t t-if="!props.readonly">
+            <div class="o_ooc_drop_field"
+                 t-att-class="{ 'o_ooc_drop_field_dragging': state.isDragging }"
+                 t-on-dragenter="onDragEnter"
+                 t-on-dragover="onDragOver"
+                 t-on-dragleave="onDragLeave"
+                 t-on-drop="onDrop">
+                <FileUploader
+                    acceptedFileExtensions="props.acceptedFileExtensions"
+                    onUploaded.bind="update"
+                >
+                    <t t-set-slot="toggler">
+                        <div class="o_ooc_drop_field_inner">
+                            <div class="o_ooc_drop_icon fa fa-upload"/>
+                            <div class="o_ooc_drop_title">
+                                <t t-if="fileName" t-esc="fileName"/>
+                                <t t-else="">Drag and drop a file here</t>
+                            </div>
+                            <div class="o_ooc_drop_hint">or click to choose an Excel file</div>
+                        </div>
+                    </t>
+                </FileUploader>
+                <div class="o_ooc_drop_actions" t-if="props.record.data[props.name]">
+                    <button class="btn btn-link btn-sm" type="button" t-on-click="onFileDownload">Download</button>
+                    <button class="btn btn-link btn-sm text-danger" type="button" t-on-click="() => this.update({})">Clear</button>
+                </div>
+                <div class="o_ooc_drop_uploading text-muted small" t-if="state.isUploading">Uploading...</div>
+            </div>
+        </t>
+        <t t-elif="props.record.resId and props.record.data[props.name]">
+            <a class="o_form_uri" href="#" t-on-click.prevent="onFileDownload">
+                <span class="fa fa-download me-2"/>
+                <t t-if="fileName" t-esc="fileName"/>
+            </a>
+        </t>
+    </t>
+
+</templates>

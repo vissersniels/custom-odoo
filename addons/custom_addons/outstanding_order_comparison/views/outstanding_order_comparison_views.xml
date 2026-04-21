@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Form view with two Excel upload areas -->
+    <record id="view_outstanding_order_comparison_form" model="ir.ui.view">
+        <field name="name">outstanding.order.comparison.form</field>
+        <field name="model">outstanding.order.comparison</field>
+        <field name="arch" type="xml">
+            <form string="Outstanding Order Comparison">
+                <header>
+                    <button name="action_run_program"
+                            string="Run"
+                            type="object"
+                            class="btn-secondary"/>
+                    <button name="action_process_files"
+                            string="Process Files"
+                            type="object"
+                            class="btn-primary"
+                            invisible="not file_one or not file_two"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>Outstanding Order Comparison</h1>
+                    </div>
+                    <div class="o_ooc_upload_grid">
+                        <div class="o_ooc_upload_column">
+                            <div class="o_ooc_upload_title">Odoo Outstanding List</div>
+                            <field name="file_one"
+                                   class="o_ooc_upload_widget"
+                                   widget="drag_drop_binary"
+                                   filename="file_one_name"
+                                   nolabel="1"
+                                   options="{'accepted_file_extensions': '.xlsx,.xls'}"
+                                   string="Drop or upload Odoo Outstanding List"/>
+                            <field name="file_one_name" invisible="1"/>
+                        </div>
+                        <div class="o_ooc_upload_column">
+                            <div class="o_ooc_upload_title">Higo Outstanding List</div>
+                            <field name="file_two"
+                                   class="o_ooc_upload_widget"
+                                   widget="drag_drop_binary"
+                                   filename="file_two_name"
+                                   nolabel="1"
+                                   options="{'accepted_file_extensions': '.xlsx,.xls'}"
+                                   string="Drop or upload Higo Outstanding List"/>
+                            <field name="file_two_name" invisible="1"/>
+                            <div class="o_ooc_higo_date_section">
+                                <div class="o_ooc_higo_date_label">Higo Outstanding List Date</div>
+                                <field name="higo_outstanding_date" class="o_ooc_higo_date_field" nolabel="1"/>
+                                <button name="action_set_higo_outstanding_date"
+                                        string="Fill Higo Date"
+                                        type="object"
+                                        class="btn-secondary"/>
+                            </div>
+                        </div>
+                    </div>
+                    <group string="Output" invisible="not output_file">
+                        <field name="output_file"
+                               widget="binary"
+                               filename="output_file_name"
+                               string="Download Result"/>
+                        <field name="output_file_name" invisible="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Act window action opening the form directly (no list needed) -->
+    <record id="action_outstanding_order_comparison_form" model="ir.actions.act_window">
+        <field name="name">Outstanding Order Comparison</field>
+        <field name="res_model">outstanding.order.comparison</field>
+        <field name="view_mode">form</field>
+        <field name="target">current</field>
+        <field name="context">{'default_name': 'Outstanding Order Comparison'}</field>
+    </record>
+
+    <!-- Menu item in Purchase app, between Products (seq=5) and Configuration (seq=100) -->
+    <menuitem
+        id="menu_outstanding_order_comparison"
+        name="Outstanding Order Comparison"
+        parent="purchase.menu_purchase_root"
+        action="action_outstanding_order_comparison_form"
+        sequence="10"/>
+
+</odoo>

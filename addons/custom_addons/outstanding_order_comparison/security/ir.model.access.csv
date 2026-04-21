@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_outstanding_order_comparison_user,outstanding.order.comparison user,model_outstanding_order_comparison,purchase.group_purchase_user,1,1,1,1
+access_outstanding_order_comparison_manager,outstanding.order.comparison manager,model_outstanding_order_comparison,purchase.group_purchase_manager,1,1,1,1
