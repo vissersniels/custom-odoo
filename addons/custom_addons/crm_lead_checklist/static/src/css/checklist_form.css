@@ -1,0 +1,30 @@
+/* Widen the label column for checklist groups.
+   Odoo 18 hard-codes fit-content(150px) for .o_inner_group labels;
+   override it only inside our scoped wrapper. */
+@media (min-width: 576px) {
+    .o_checklist_wider_labels .o_inner_group {
+        grid-template-columns: fit-content(320px) minmax(0, 1fr);
+        row-gap: 1px;
+    }
+
+    .o_form_editable .o_checklist_wider_labels .o_inner_group {
+        grid-template-columns: 320px 1fr;
+        row-gap: 1px;
+    }
+}
+
+/* Tighten row spacing in the checklist wrapper for narrow viewports too */
+.o_checklist_wider_labels .o_inner_group {
+    row-gap: 1px;
+}
+
+.o_checklist_wider_labels .o_wrap_field {
+    margin-bottom: 1px !important;
+}
+
+/* Shrink the Internal Notes description field to ~2 lines by default.
+   The content-editable area grows naturally when more content is added. */
+.o_field_widget[name="description"] .note-editable,
+.o_field_widget[name="description"] .odoo-editor-editable {
+    min-height: 3em !important;
+}

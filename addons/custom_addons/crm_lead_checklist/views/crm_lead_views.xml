@@ -11,8 +11,7 @@
                     <!-- ── FREE-TEXT INTERNAL NOTES ─────────────────────── -->
                     <field name="description"
                            placeholder="Add a note..."
-                           options="{'collaborative': true}"
-                           style="min-height: 1em;"/>
+                           options="{'collaborative': true}"/>
 
                     <!-- ── COMMERCIAL LEVEL ─────────────────────────────── -->
                     <separator string="Commercial Level"/>
@@ -20,7 +19,8 @@
                         Clear answers are needed on the following questions
                         <strong>before</strong> we launch a request on the Higo side.
                     </div>
-                    <group col="2">
+                    <div class="o_checklist_wider_labels">
+                    <group col="1">
                         <field name="x_cl_end_customer"      nolabel="0"/>
                         <field name="x_cl_known_partners"    nolabel="0"/>
                         <field name="x_cl_dmu"               nolabel="0"/>
@@ -32,13 +32,15 @@
                         <field name="x_cl_comparing_with"    nolabel="0"/>
                         <field name="x_cl_status_company"    nolabel="0"/>
                     </group>
+                    </div>
 
                     <!-- ── TECHNICAL LEVEL ──────────────────────────────── -->
                     <separator string="Technical Level"/>
                     <div class="alert alert-warning mb-3" role="status">
                         Gather criteria that are required for making a suitable offer or new design.
                     </div>
-                    <group col="2">
+                    <div class="o_checklist_wider_labels">
+                    <group col="1">
                         <field name="x_tl_connector_types"       nolabel="0"/>
                         <field name="x_tl_mating_cycles"         nolabel="0"/>
                         <field name="x_tl_current_voltage"       nolabel="0"/>
@@ -50,6 +52,7 @@
                         <field name="x_tl_cable_lengths"         nolabel="0"/>
                         <field name="x_tl_compliance"            nolabel="0"/>
                     </group>
+                    </div>
                     <group>
                         <field name="x_tl_additional_notes" nolabel="0"/>
                     </group>
