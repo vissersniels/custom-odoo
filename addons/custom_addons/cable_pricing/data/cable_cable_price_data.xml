@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="cable_cable_price_a0" model="cable.cable.price">
+        <field name="ac_coding">A0</field>
+        <field name="description">OD 3.7mm 2*0.2mm2, PVC/PVC (Black,Blue)</field>
+        <field name="poles">2</field>
+        <field name="application">signal</field>
+        <field name="price_per_meter">0.50</field>
+    </record>
+
+    <record id="cable_cable_price_d7" model="cable.cable.price">
+        <field name="ac_coding">D7</field>
+        <field name="description">OD 3.7mm 2*0.2mm2, PVC/PVC (Black,Red)</field>
+        <field name="poles">2</field>
+        <field name="application">signal</field>
+        <field name="price_per_meter">1.00</field>
+    </record>
+
+    <record id="cable_cable_price_fv" model="cable.cable.price">
+        <field name="ac_coding">FV</field>
+        <field name="description">OD 3.7mm 3*0.14mm2, PVC/PVC (Black,Blue,Red)</field>
+        <field name="poles">3</field>
+        <field name="application">signal</field>
+        <field name="price_per_meter">2.00</field>
+    </record>
+
+    <record id="cable_cable_price_a1" model="cable.cable.price">
+        <field name="ac_coding">A1</field>
+        <field name="description">OD 3.7mm 3*0.2mm2, PVC/PVC (Black,Blue,Red)</field>
+        <field name="poles">3</field>
+        <field name="application">signal</field>
+        <field name="price_per_meter">2.50</field>
+    </record>
+</odoo>

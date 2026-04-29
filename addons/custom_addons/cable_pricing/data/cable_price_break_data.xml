@@ -1,67 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<odoo noupdate="1">
+<odoo>
     <record id="cable_price_break_a" model="cable.price.break">
         <field name="tier">A</field>
         <field name="moq">10</field>
-        <field name="signal_factor">1.0</field>
-        <field name="pur_factor">1.0</field>
-        <field name="power_factor">1.0</field>
-        <field name="ea_factor">1.0</field>
+        <field name="signal_factor">1.70</field>
+        <field name="pur_factor">1.20</field>
+        <field name="power_factor">1.90</field>
+        <field name="ea_factor">0.0</field>
     </record>
     <record id="cable_price_break_b" model="cable.price.break">
         <field name="tier">B</field>
         <field name="moq">50</field>
-        <field name="signal_factor">1.0</field>
-        <field name="pur_factor">1.0</field>
-        <field name="power_factor">1.0</field>
-        <field name="ea_factor">1.0</field>
+        <field name="signal_factor">1.60</field>
+        <field name="pur_factor">1.10</field>
+        <field name="power_factor">1.80</field>
+        <field name="ea_factor">1.90</field>
     </record>
     <record id="cable_price_break_c" model="cable.price.break">
         <field name="tier">C</field>
         <field name="moq">300</field>
-        <field name="signal_factor">1.0</field>
-        <field name="pur_factor">1.0</field>
-        <field name="power_factor">1.0</field>
-        <field name="ea_factor">1.0</field>
+        <field name="signal_factor">1.50</field>
+        <field name="pur_factor">1.00</field>
+        <field name="power_factor">1.65</field>
+        <field name="ea_factor">1.80</field>
     </record>
     <record id="cable_price_break_d" model="cable.price.break">
         <field name="tier">D</field>
         <field name="moq">1000</field>
-        <field name="signal_factor">1.0</field>
-        <field name="pur_factor">1.0</field>
-        <field name="power_factor">1.0</field>
-        <field name="ea_factor">1.0</field>
+        <field name="signal_factor">1.40</field>
+        <field name="pur_factor">0.98</field>
+        <field name="power_factor">1.55</field>
+        <field name="ea_factor">1.70</field>
     </record>
     <record id="cable_price_break_e" model="cable.price.break">
         <field name="tier">E</field>
         <field name="moq">5000</field>
-        <field name="signal_factor">1.0</field>
-        <field name="pur_factor">1.0</field>
-        <field name="power_factor">1.0</field>
-        <field name="ea_factor">1.0</field>
+        <field name="signal_factor">1.30</field>
+        <field name="pur_factor">0.97</field>
+        <field name="power_factor">1.50</field>
+        <field name="ea_factor">1.60</field>
     </record>
     <record id="cable_price_break_f" model="cable.price.break">
         <field name="tier">F</field>
         <field name="moq">10000</field>
-        <field name="signal_factor">1.0</field>
-        <field name="pur_factor">1.0</field>
-        <field name="power_factor">1.0</field>
-        <field name="ea_factor">1.0</field>
+        <field name="signal_factor">1.25</field>
+        <field name="pur_factor">0.95</field>
+        <field name="power_factor">1.35</field>
+        <field name="ea_factor">1.50</field>
     </record>
     <record id="cable_price_break_g" model="cable.price.break">
         <field name="tier">G</field>
         <field name="moq">20000</field>
-        <field name="signal_factor">1.0</field>
-        <field name="pur_factor">1.0</field>
-        <field name="power_factor">1.0</field>
-        <field name="ea_factor">1.0</field>
+        <field name="signal_factor">1.20</field>
+        <field name="pur_factor">0.92</field>
+        <field name="power_factor">1.20</field>
+        <field name="ea_factor">1.30</field>
     </record>
     <record id="cable_price_break_h" model="cable.price.break">
         <field name="tier">H</field>
         <field name="moq">50000</field>
-        <field name="signal_factor">1.0</field>
-        <field name="pur_factor">1.0</field>
-        <field name="power_factor">1.0</field>
-        <field name="ea_factor">1.0</field>
+        <field name="signal_factor">1.18</field>
+        <field name="pur_factor">0.90</field>
+        <field name="power_factor">1.15</field>
+        <field name="ea_factor">1.20</field>
     </record>
 </odoo>

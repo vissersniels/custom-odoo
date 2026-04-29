@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="cable_connector_price_z209bgp" model="cable.connector.price">
+        <field name="connector_combined">Z209BGP</field>
+        <field name="series">Mini B</field>
+        <field name="application">signal</field>
+        <field name="price_1_49">1.40</field>
+        <field name="price_50_299">1.20</field>
+        <field name="price_300_999">1.00</field>
+        <field name="price_1000_4999">0.98</field>
+        <field name="price_5000_9999">0.95</field>
+        <field name="price_10000_19999">0.90</field>
+        <field name="price_20000_49999">0.88</field>
+        <field name="price_50000_plus">0.85</field>
+    </record>
+
+    <record id="cable_connector_price_z309bgp" model="cable.connector.price">
+        <field name="connector_combined">Z309BGP</field>
+        <field name="series">Mini B</field>
+        <field name="application">signal</field>
+        <field name="price_1_49">2.80</field>
+        <field name="price_50_299">2.40</field>
+        <field name="price_300_999">2.00</field>
+        <field name="price_1000_4999">1.96</field>
+        <field name="price_5000_9999">1.90</field>
+        <field name="price_10000_19999">1.80</field>
+        <field name="price_20000_49999">1.76</field>
+        <field name="price_50000_plus">1.70</field>
+    </record>
+</odoo>

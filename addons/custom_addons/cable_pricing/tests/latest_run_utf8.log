@@ -1,0 +1,1885 @@
+﻿python.exe : 2026-04-29 10:39:23,898 7680 INFO ? odoo: Odoo version 18.0 
+At line:1 char:62
++ ... Odoo/odoo"; & "c:/Users/niels/VSC_Projects/Custom-Odoo/odoo/.venv/Scr ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-04-29 10:3...o version 18.0  
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-04-29 10:39:23,898 7680 INFO ? odoo: Using configuration file at 
+C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo.conf 
+2026-04-29 10:39:23,898 7680 INFO ? odoo: addons paths: 
+['C:\\Users\\niels\\VSC_Projects\\Custom-Odoo\\odoo\\odoo\\addons', 
+'c:\\users\\niels\\appdata\\local\\openerp s.a\\odoo\\addons\\18.0', 
+'c:\\users\\niels\\vsc_projects\\custom-odoo\\odoo\\addons', 
+'c:\\users\\niels\\vsc_projects\\custom-odoo\\odoo\\addons\\custom_addons', 
+'c:\\users\\niels\\vsc_projects\\custom-odoo\\odoo\\odoo\\addons'] 
+2026-04-29 10:39:23,898 7680 INFO ? odoo: database: niels@localhost:5432 
+2026-04-29 10:39:24,208 7680 INFO ? odoo.addons.base.models.ir_actions_report: 
+You need Wkhtmltopdf to print a pdf version of the reports. 
+2026-04-29 10:39:24,211 7680 INFO ? odoo.addons.base.models.ir_actions_report: 
+You need Wkhtmltoimage to generate images from html. 
+2026-04-29 10:39:24,358 7680 INFO ? odoo.service.server: HTTP service 
+(werkzeug) running on LT-PF5PSGKG.ac-solutions.be:8069 
+2026-04-29 10:39:24,389 7680 INFO test_cable_pricing_product3 
+odoo.tests.common: Importing test framework 
+2026-04-29 10:39:24,402 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: init db 
+2026-04-29 10:39:24,450 7680 WARNING test_cable_pricing_product3 
+odoo.modules.module: Missing `license` key in manifest for 'KPI_project', 
+defaulting to LGPL-3 
+2026-04-29 10:39:24,938 7680 WARNING test_cable_pricing_product3 
+odoo.modules.module: Missing `license` key in manifest for 
+'project_deadline_todo', defaulting to LGPL-3 
+2026-04-29 10:39:25,170 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 1 modules... 
+2026-04-29 10:39:25,170 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module base (1/1) 
+2026-04-29 10:39:25,184 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module base: creating or updating database tables 
+2026-04-29 10:39:25,456 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of ir.module.module.menus_by_module 
+2026-04-29 10:39:25,456 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of ir.module.module.reports_by_module 
+2026-04-29 10:39:25,456 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of ir.module.module.views_by_module 
+2026-04-29 10:39:25,542 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.partner.user_id 
+2026-04-29 10:39:25,542 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.partner.commercial_partner_id 
+2026-04-29 10:39:25,542 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.partner.complete_name 
+2026-04-29 10:39:25,542 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.partner.company_registry 
+2026-04-29 10:39:25,542 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.partner.commercial_company_name 
+2026-04-29 10:39:25,542 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.partner.partner_share 
+2026-04-29 10:39:25,571 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.currency.decimal_places 
+2026-04-29 10:39:25,592 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.company.uses_default_logo 
+2026-04-29 10:39:25,592 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.company.logo_web 
+2026-04-29 10:39:25,594 7680 INFO test_cable_pricing_product3 odoo.models: 
+Computing parent_path for table res_company... 
+2026-04-29 10:39:25,617 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.users.signature 
+2026-04-29 10:39:25,617 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.users.share 
+2026-04-29 10:39:26,843 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/res_bank.xml 
+2026-04-29 10:39:26,848 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/res.lang.csv 
+2026-04-29 10:39:26,886 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/res_lang_data.xml 
+2026-04-29 10:39:26,924 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/res_partner_data.xml 
+2026-04-29 10:39:26,982 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/res_currency_data.xml 
+2026-04-29 10:39:27,407 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/res_company_data.xml 
+2026-04-29 10:39:27,414 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/res_users_data.xml 
+2026-04-29 10:39:28,425 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/report_paperformat_data.xml 
+2026-04-29 10:39:28,433 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/res_country_data.xml 
+2026-04-29 10:39:28,802 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/ir_demo_data.xml 
+2026-04-29 10:39:28,814 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/security/base_groups.xml 
+2026-04-29 10:39:29,019 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/security/base_security.xml 
+2026-04-29 10:39:29,159 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/base_menus.xml 
+2026-04-29 10:39:29,224 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/decimal_precision_views.xml 
+2026-04-29 10:39:29,242 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/res_config_views.xml 
+2026-04-29 10:39:29,249 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/res.country.state.csv 
+2026-04-29 10:39:29,701 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/ir_actions_views.xml 
+2026-04-29 10:39:29,832 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/ir_asset_views.xml 
+2026-04-29 10:39:29,850 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/ir_config_parameter_views.xml 
+2026-04-29 10:39:29,867 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/ir_cron_views.xml 
+2026-04-29 10:39:29,896 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/ir_cron_trigger_views.xml 
+2026-04-29 10:39:29,912 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/ir_filters_views.xml 
+2026-04-29 10:39:29,929 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/ir_mail_server_views.xml 
+2026-04-29 10:39:29,949 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/ir_model_views.xml 
+2026-04-29 10:39:30,097 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/ir_attachment_views.xml 
+2026-04-29 10:39:30,117 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/ir_rule_views.xml 
+2026-04-29 10:39:30,136 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/ir_sequence_views.xml 
+2026-04-29 10:39:30,157 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/ir_ui_menu_views.xml 
+2026-04-29 10:39:30,176 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/ir_ui_view_views.xml 
+2026-04-29 10:39:30,220 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/ir_default_views.xml 
+2026-04-29 10:39:30,236 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/ir_config_parameter_data.xml 
+2026-04-29 10:39:30,239 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/ir_cron_data.xml 
+2026-04-29 10:39:30,251 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/report/ir_model_report.xml 
+2026-04-29 10:39:30,255 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/report/ir_model_templates.xml 
+2026-04-29 10:39:30,265 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/ir_logging_views.xml 
+2026-04-29 10:39:30,283 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/ir_qweb_widget_templates.xml 
+2026-04-29 10:39:30,294 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/ir_module_views.xml 
+2026-04-29 10:39:30,342 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/ir_module_category_data.xml 
+2026-04-29 10:39:30,401 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/ir_module_module.xml 
+2026-04-29 10:39:30,456 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/report/ir_module_reports.xml 
+2026-04-29 10:39:30,460 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/report/ir_module_report_templates.xml 
+2026-04-29 10:39:30,466 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/wizard/base_module_update_views.xml 
+2026-04-29 10:39:30,482 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/wizard/base_language_install_views.xml 
+2026-04-29 10:39:30,494 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/wizard/base_import_language_views.xml 
+2026-04-29 10:39:30,505 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/wizard/base_module_upgrade_views.xml 
+2026-04-29 10:39:30,524 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/wizard/base_module_uninstall_views.xml 
+2026-04-29 10:39:30,535 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/wizard/base_export_language_views.xml 
+2026-04-29 10:39:30,548 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/wizard/base_partner_merge_views.xml 
+2026-04-29 10:39:30,564 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/ir_demo_failure_data.xml 
+2026-04-29 10:39:30,579 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/ir_profile_views.xml 
+2026-04-29 10:39:30,600 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/res_company_views.xml 
+2026-04-29 10:39:30,622 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/res_lang_views.xml 
+2026-04-29 10:39:30,643 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/res_partner_views.xml 
+2026-04-29 10:39:30,739 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/res_bank_views.xml 
+2026-04-29 10:39:30,768 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/res_country_views.xml 
+2026-04-29 10:39:30,808 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/res_currency_views.xml 
+2026-04-29 10:39:30,842 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/res_users_views.xml 
+2026-04-29 10:39:30,951 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/res_device_views.xml 
+2026-04-29 10:39:30,970 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/res_users_identitycheck_views.xml 
+2026-04-29 10:39:30,977 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/res_config_settings_views.xml 
+2026-04-29 10:39:30,985 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/views/report_paperformat_views.xml 
+2026-04-29 10:39:31,008 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/security/ir.model.access.csv 
+2026-04-29 10:39:31,101 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module base: loading demo 
+2026-04-29 10:39:31,101 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/res_users_demo.xml 
+2026-04-29 10:39:32,413 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/res_partner_bank_demo.xml 
+2026-04-29 10:39:32,419 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/res_currency_demo.xml 
+2026-04-29 10:39:32,422 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/res_currency_rate_demo.xml 
+2026-04-29 10:39:32,630 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/res_bank_demo.xml 
+2026-04-29 10:39:32,635 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/res_partner_demo.xml 
+2026-04-29 10:39:32,793 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base/data/res_partner_image_demo.xml 
+2026-04-29 10:39:33,295 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module base loaded in 8.12s, 9271 queries (+9271 other) 
+2026-04-29 10:39:33,295 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: 1 modules loaded in 8.12s, 9271 queries (+9271 extra) 
+2026-04-29 10:39:33,314 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: updating modules list 
+2026-04-29 10:39:33,318 7680 INFO test_cable_pricing_product3 
+odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to 
+user __system__ #1 via n/a 
+2026-04-29 10:39:33,856 7680 INFO test_cable_pricing_product3 
+odoo.addons.base.models.ir_module: ALLOW access to module.button_install on 
+['Cable Pricing'] to user __system__ #1 via n/a 
+2026-04-29 10:39:33,960 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 56 modules... 
+2026-04-29 10:39:33,960 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module l10n_us (2/56) 
+2026-04-29 10:39:33,978 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module l10n_us: creating or updating database tables 
+2026-04-29 10:39:34,019 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading l10n_us/data/res_company_data.xml 
+2026-04-29 10:39:34,024 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading l10n_us/views/res_partner_bank_views.xml 
+2026-04-29 10:39:34,050 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module l10n_us loaded in 0.09s, 60 queries (+60 other) 
+2026-04-29 10:39:34,050 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module uom (3/56) 
+2026-04-29 10:39:34,067 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module uom: creating or updating database tables 
+2026-04-29 10:39:34,122 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading uom/data/uom_data.xml 
+2026-04-29 10:39:34,179 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading uom/security/uom_security.xml 
+2026-04-29 10:39:34,206 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading uom/security/ir.model.access.csv 
+2026-04-29 10:39:34,219 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading uom/views/uom_uom_views.xml 
+2026-04-29 10:39:34,267 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module uom loaded in 0.22s, 305 queries (+305 other) 
+2026-04-29 10:39:34,267 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module web (4/56) 
+2026-04-29 10:39:34,287 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module web: creating or updating database tables 
+2026-04-29 10:39:34,807 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading web/security/ir.model.access.csv 
+2026-04-29 10:39:34,815 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading web/views/webclient_templates.xml 
+2026-04-29 10:39:34,857 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading web/views/report_templates.xml 
+2026-04-29 10:39:34,920 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading web/views/base_document_layout_views.xml 
+2026-04-29 10:39:34,930 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading web/views/partner_view.xml 
+2026-04-29 10:39:34,935 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading web/views/speedscope_template.xml 
+2026-04-29 10:39:34,939 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading web/views/neutralize_views.xml 
+2026-04-29 10:39:34,943 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading web/data/ir_attachment.xml 
+2026-04-29 10:39:34,946 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading web/data/report_layout.xml 
+2026-04-29 10:39:35,148 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module web loaded in 0.88s, 1123 queries (+1123 other) 
+2026-04-29 10:39:35,148 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module auth_totp (5/56) 
+2026-04-29 10:39:35,180 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module auth_totp: creating or updating database tables 
+2026-04-29 10:39:35,233 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading auth_totp/security/security.xml 
+2026-04-29 10:39:35,261 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading auth_totp/security/ir.model.access.csv 
+2026-04-29 10:39:35,267 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading auth_totp/data/ir_action_data.xml 
+2026-04-29 10:39:35,275 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading auth_totp/views/res_users_views.xml 
+2026-04-29 10:39:35,300 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading auth_totp/views/templates.xml 
+2026-04-29 10:39:35,305 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading auth_totp/wizard/auth_totp_wizard_views.xml 
+2026-04-29 10:39:35,324 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module auth_totp loaded in 0.18s, 188 queries (+188 
+other) 
+2026-04-29 10:39:35,324 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module base_import (6/56) 
+2026-04-29 10:39:35,538 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module base_import: creating or updating database 
+tables 
+2026-04-29 10:39:36,035 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base_import/security/ir.model.access.csv 
+2026-04-29 10:39:36,050 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module base_import loaded in 0.73s, 903 queries (+903 
+other) 
+2026-04-29 10:39:36,050 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module base_import_module (7/56) 
+2026-04-29 10:39:36,074 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module base_import_module: creating or updating 
+database tables 
+2026-04-29 10:39:36,143 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base_import_module/security/ir.model.access.csv 
+2026-04-29 10:39:36,150 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+base_import_module/views/base_import_module_view.xml 
+2026-04-29 10:39:36,165 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base_import_module/views/ir_module_views.xml 
+2026-04-29 10:39:36,203 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module base_import_module loaded in 0.15s, 164 queries 
+(+164 other) 
+2026-04-29 10:39:36,203 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module base_setup (8/56) 
+2026-04-29 10:39:36,233 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module base_setup: creating or updating database tables 
+2026-04-29 10:39:36,282 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base_setup/data/base_setup_data.xml 
+2026-04-29 10:39:36,289 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base_setup/views/res_config_settings_views.xml 
+2026-04-29 10:39:36,312 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base_setup/views/res_partner_views.xml 
+2026-04-29 10:39:36,331 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module base_setup loaded in 0.13s, 154 queries (+154 
+other) 
+2026-04-29 10:39:36,331 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module bus (9/56) 
+2026-04-29 10:39:36,348 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module bus: creating or updating database tables 
+2026-04-29 10:39:36,474 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading bus/security/ir.model.access.csv 
+2026-04-29 10:39:36,497 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module bus loaded in 0.17s, 168 queries (+168 other) 
+2026-04-29 10:39:36,497 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module http_routing (10/56) 
+2026-04-29 10:39:36,516 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module http_routing: creating or updating database 
+tables 
+2026-04-29 10:39:36,541 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading http_routing/views/http_routing_template.xml 
+2026-04-29 10:39:36,571 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading http_routing/views/res_lang_views.xml 
+2026-04-29 10:39:36,595 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module http_routing loaded in 0.10s, 100 queries (+100 
+other) 
+2026-04-29 10:39:36,595 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module onboarding (11/56) 
+2026-04-29 10:39:36,617 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module onboarding: creating or updating database tables 
+2026-04-29 10:39:36,730 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading onboarding/views/onboarding_templates.xml 
+2026-04-29 10:39:36,743 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading onboarding/views/onboarding_views.xml 
+2026-04-29 10:39:36,761 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading onboarding/views/onboarding_menus.xml 
+2026-04-29 10:39:36,767 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading onboarding/security/ir.model.access.csv 
+2026-04-29 10:39:36,825 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module onboarding loaded in 0.23s, 225 queries (+225 
+other) 
+2026-04-29 10:39:36,825 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module resource (12/56) 
+2026-04-29 10:39:36,857 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module resource: creating or updating database tables 
+2026-04-29 10:39:36,997 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading resource/data/resource_data.xml 
+2026-04-29 10:39:37,012 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading resource/security/ir.model.access.csv 
+2026-04-29 10:39:37,021 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading resource/security/resource_security.xml 
+2026-04-29 10:39:37,043 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading resource/views/resource_resource_views.xml 
+2026-04-29 10:39:37,066 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+resource/views/resource_calendar_leaves_views.xml 
+2026-04-29 10:39:37,085 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+resource/views/resource_calendar_attendance_views.xml 
+2026-04-29 10:39:37,093 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading resource/views/resource_calendar_views.xml 
+2026-04-29 10:39:37,108 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading resource/views/menuitems.xml 
+2026-04-29 10:39:37,118 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module resource: loading demo 
+2026-04-29 10:39:37,118 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading resource/data/resource_demo.xml 
+2026-04-29 10:39:37,155 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module resource loaded in 0.33s, 425 queries (+425 
+other) 
+2026-04-29 10:39:37,156 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module utm (13/56) 
+2026-04-29 10:39:37,187 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module utm: creating or updating database tables 
+2026-04-29 10:39:37,316 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading utm/data/utm_medium_data.xml 
+2026-04-29 10:39:37,331 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading utm/data/utm_source_data.xml 
+2026-04-29 10:39:37,344 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading utm/data/utm_stage_data.xml 
+2026-04-29 10:39:37,348 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading utm/data/utm_tag_data.xml 
+2026-04-29 10:39:37,352 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading utm/views/utm_campaign_views.xml 
+2026-04-29 10:39:37,375 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading utm/views/utm_medium_views.xml 
+2026-04-29 10:39:37,386 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading utm/views/utm_source_views.xml 
+2026-04-29 10:39:37,396 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading utm/views/utm_stage_views.xml 
+2026-04-29 10:39:37,406 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading utm/views/utm_tag_views.xml 
+2026-04-29 10:39:37,412 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading utm/views/utm_menus.xml 
+2026-04-29 10:39:37,433 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading utm/security/ir.model.access.csv 
+2026-04-29 10:39:37,445 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module utm: loading demo 
+2026-04-29 10:39:37,445 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading utm/data/utm_campaign_demo.xml 
+2026-04-29 10:39:37,454 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading utm/data/utm_stage_demo.xml 
+2026-04-29 10:39:37,474 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module utm loaded in 0.32s, 441 queries (+441 other) 
+2026-04-29 10:39:37,474 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module web_tour (14/56) 
+2026-04-29 10:39:37,498 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module web_tour: creating or updating database tables 
+2026-04-29 10:39:37,504 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.users.tour_enabled 
+2026-04-29 10:39:37,585 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading web_tour/security/ir.model.access.csv 
+2026-04-29 10:39:37,595 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading web_tour/views/tour_views.xml 
+2026-04-29 10:39:37,613 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading web_tour/views/res_users_views.xml 
+2026-04-29 10:39:37,637 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module web_tour loaded in 0.16s, 188 queries (+188 
+other) 
+2026-04-29 10:39:37,637 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module html_editor (15/56) 
+2026-04-29 10:39:37,662 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module html_editor: creating or updating database 
+tables 
+2026-04-29 10:39:37,712 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module html_editor loaded in 0.07s, 46 queries (+46 
+other) 
+2026-04-29 10:39:37,712 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module iap (16/56) 
+2026-04-29 10:39:37,740 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module iap: creating or updating database tables 
+2026-04-29 10:39:37,818 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading iap/data/services.xml 
+2026-04-29 10:39:37,823 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading iap/security/ir.model.access.csv 
+2026-04-29 10:39:37,835 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading iap/security/ir_rule.xml 
+2026-04-29 10:39:37,842 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading iap/views/iap_views.xml 
+2026-04-29 10:39:37,861 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading iap/views/res_config_settings.xml 
+2026-04-29 10:39:37,882 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module iap loaded in 0.17s, 183 queries (+183 other) 
+2026-04-29 10:39:37,882 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module mail (17/56) 
+2026-04-29 10:39:37,923 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module mail: creating or updating database tables 
+2026-04-29 10:39:38,194 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of ir.actions.server.partner_ids 
+2026-04-29 10:39:38,195 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of ir.actions.server.template_id 
+2026-04-29 10:39:38,195 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of ir.actions.server.activity_type_id 
+2026-04-29 10:39:38,195 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of ir.actions.server.activity_date_deadline_range 
+2026-04-29 10:39:38,195 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of ir.actions.server.activity_user_id 
+2026-04-29 10:39:38,195 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of ir.actions.server.mail_post_method 
+2026-04-29 10:39:38,195 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of ir.actions.server.activity_summary 
+2026-04-29 10:39:38,195 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of ir.actions.server.activity_date_deadline_range_type 
+2026-04-29 10:39:38,195 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of ir.actions.server.activity_user_type 
+2026-04-29 10:39:38,195 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of ir.actions.server.activity_user_field_name 
+2026-04-29 10:39:38,195 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of ir.actions.server.activity_note 
+2026-04-29 10:39:38,195 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of ir.actions.server.mail_post_autofollow 
+2026-04-29 10:39:38,230 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.company.email_primary_color 
+2026-04-29 10:39:38,230 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.company.email_secondary_color 
+2026-04-29 10:39:38,241 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.users.notification_type 
+2026-04-29 10:39:38,319 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.partner.email_normalized 
+<string>:38: (ERROR/3) Unexpected indentation.
+<string>:43: (WARNING/2) Block quote ends without a blank line; unexpected 
+unindent.
+2026-04-29 10:39:39,987 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/data/mail_groups.xml 
+2026-04-29 10:39:40,056 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/wizard/mail_activity_schedule_views.xml 
+2026-04-29 10:39:40,065 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/wizard/mail_blacklist_remove_views.xml 
+2026-04-29 10:39:40,070 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/wizard/mail_compose_message_views.xml 
+2026-04-29 10:39:40,086 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/wizard/mail_resend_message_views.xml 
+2026-04-29 10:39:40,096 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/wizard/mail_resend_partner_views.xml 
+2026-04-29 10:39:40,104 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/wizard/mail_template_preview_views.xml 
+2026-04-29 10:39:40,115 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/wizard/mail_wizard_invite_views.xml 
+2026-04-29 10:39:40,121 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/wizard/mail_template_reset_views.xml 
+2026-04-29 10:39:40,131 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/fetchmail_views.xml 
+2026-04-29 10:39:40,147 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_message_subtype_views.xml 
+2026-04-29 10:39:40,157 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_tracking_value_views.xml 
+2026-04-29 10:39:40,166 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_notification_views.xml 
+2026-04-29 10:39:40,173 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_message_views.xml 
+2026-04-29 10:39:40,196 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_message_schedule_views.xml 
+2026-04-29 10:39:40,206 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_mail_views.xml 
+2026-04-29 10:39:40,225 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_followers_views.xml 
+2026-04-29 10:39:40,234 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_ice_server_views.xml 
+2026-04-29 10:39:40,243 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/discuss_channel_member_views.xml 
+2026-04-29 10:39:40,251 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/discuss_channel_rtc_session_views.xml 
+2026-04-29 10:39:40,262 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_link_preview_views.xml 
+2026-04-29 10:39:40,270 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+mail/views/discuss/discuss_gif_favorite_views.xml 
+2026-04-29 10:39:40,279 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/discuss_channel_views.xml 
+2026-04-29 10:39:40,300 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_canned_response_views.xml 
+2026-04-29 10:39:40,316 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_activity_views.xml 
+2026-04-29 10:39:40,540 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_activity_plan_views.xml 
+2026-04-29 10:39:40,567 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_activity_plan_template_views.xml 
+2026-04-29 10:39:40,574 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/res_config_settings_views.xml 
+2026-04-29 10:39:40,592 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/data/ir_config_parameter_data.xml 
+2026-04-29 10:39:40,597 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/data/res_partner_data.xml 
+2026-04-29 10:39:40,656 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/data/mail_message_subtype_data.xml 
+2026-04-29 10:39:40,664 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/data/mail_templates_chatter.xml 
+2026-04-29 10:39:40,677 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/data/mail_templates_email_layouts.xml 
+2026-04-29 10:39:40,694 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/data/mail_templates_mailgateway.xml 
+2026-04-29 10:39:40,706 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/data/discuss_channel_data.xml 
+2026-04-29 10:39:40,743 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/data/mail_activity_data.xml 
+2026-04-29 10:39:40,753 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/data/security_notifications_templates.xml 
+2026-04-29 10:39:40,757 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/data/ir_cron_data.xml 
+2026-04-29 10:39:40,789 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/data/ir_actions_client.xml 
+2026-04-29 10:39:40,794 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/security/mail_security.xml 
+2026-04-29 10:39:40,916 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/security/ir.model.access.csv 
+2026-04-29 10:39:40,975 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/discuss_public_templates.xml 
+2026-04-29 10:39:40,981 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_alias_domain_views.xml 
+2026-04-29 10:39:40,999 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_alias_views.xml 
+2026-04-29 10:39:41,024 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_gateway_allowed_views.xml 
+2026-04-29 10:39:41,036 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_guest_views.xml 
+2026-04-29 10:39:41,049 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_message_reaction_views.xml 
+2026-04-29 10:39:41,061 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_templates_public.xml 
+2026-04-29 10:39:41,069 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/res_users_views.xml 
+2026-04-29 10:39:41,088 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/res_users_settings_views.xml 
+2026-04-29 10:39:41,106 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_template_views.xml 
+2026-04-29 10:39:41,131 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/ir_actions_server_views.xml 
+2026-04-29 10:39:41,145 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/ir_model_views.xml 
+2026-04-29 10:39:41,171 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/res_partner_views.xml 
+2026-04-29 10:39:41,214 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_blacklist_views.xml 
+2026-04-29 10:39:41,231 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_menus.xml 
+2026-04-29 10:39:41,354 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/res_company_views.xml 
+2026-04-29 10:39:41,364 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/views/mail_scheduled_message_views.xml 
+2026-04-29 10:39:41,371 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/data/mail_canned_response_data.xml 
+2026-04-29 10:39:41,378 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/data/mail_templates_invite.xml 
+2026-04-29 10:39:41,386 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/data/web_tour_tour.xml 
+2026-04-29 10:39:41,392 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module mail: loading demo 
+2026-04-29 10:39:41,392 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/demo/discuss_channel_demo.xml 
+2026-04-29 10:39:41,496 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail/demo/mail_canned_response_demo.xml 
+2026-04-29 10:39:41,556 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module mail loaded in 3.67s, 4755 queries (+4756 other) 
+2026-04-29 10:39:41,556 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module web_editor (18/56) 
+2026-04-29 10:39:41,618 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module web_editor: creating or updating database tables 
+2026-04-29 10:39:42,620 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading web_editor/security/ir.model.access.csv 
+2026-04-29 10:39:42,640 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading web_editor/data/editor_assets.xml 
+2026-04-29 10:39:42,645 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading web_editor/views/editor.xml 
+2026-04-29 10:39:42,658 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading web_editor/views/snippets.xml 
+2026-04-29 10:39:42,712 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module web_editor loaded in 1.16s, 1515 queries (+1515 
+other) 
+2026-04-29 10:39:42,712 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module analytic (19/56) 
+2026-04-29 10:39:42,765 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module analytic: creating or updating database tables 
+2026-04-29 10:39:42,971 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading analytic/security/analytic_security.xml 
+2026-04-29 10:39:43,030 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading analytic/security/ir.model.access.csv 
+2026-04-29 10:39:43,049 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading analytic/views/analytic_line_views.xml 
+2026-04-29 10:39:43,090 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading analytic/views/analytic_account_views.xml 
+2026-04-29 10:39:43,118 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading analytic/views/analytic_plan_views.xml 
+2026-04-29 10:39:43,138 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+analytic/views/analytic_distribution_model_views.xml 
+2026-04-29 10:39:43,151 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading analytic/data/analytic_data.xml 
+2026-04-29 10:39:43,205 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module analytic: loading demo 
+2026-04-29 10:39:43,205 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading analytic/data/analytic_account_demo.xml 
+2026-04-29 10:39:43,572 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module analytic loaded in 0.86s, 682 queries (+682 
+other) 
+2026-04-29 10:39:43,573 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module auth_signup (20/56) 
+2026-04-29 10:39:43,613 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module auth_signup: creating or updating database 
+tables 
+2026-04-29 10:39:43,699 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading auth_signup/data/ir_config_parameter_data.xml 
+2026-04-29 10:39:43,704 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading auth_signup/data/ir_cron_data.xml 
+2026-04-29 10:39:43,715 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading auth_signup/data/mail_template_data.xml 
+2026-04-29 10:39:43,733 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading auth_signup/views/res_config_settings_views.xml 
+2026-04-29 10:39:43,749 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading auth_signup/views/res_users_views.xml 
+2026-04-29 10:39:43,766 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+auth_signup/views/auth_signup_login_templates.xml 
+2026-04-29 10:39:43,781 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+auth_signup/views/auth_signup_templates_email.xml 
+2026-04-29 10:39:43,791 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading auth_signup/views/webclient_templates.xml 
+2026-04-29 10:39:43,813 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module auth_signup loaded in 0.24s, 207 queries (+207 
+other) 
+2026-04-29 10:39:43,813 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module auth_totp_mail (21/56) 
+2026-04-29 10:39:43,846 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module auth_totp_mail: creating or updating database 
+tables 
+2026-04-29 10:39:43,877 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading auth_totp_mail/data/ir_action_data.xml 
+2026-04-29 10:39:43,892 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading auth_totp_mail/data/mail_template_data.xml 
+2026-04-29 10:39:43,899 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+auth_totp_mail/data/security_notifications_template.xml 
+2026-04-29 10:39:43,905 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading auth_totp_mail/views/res_users_views.xml 
+2026-04-29 10:39:43,937 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module auth_totp_mail loaded in 0.12s, 121 queries (+121 
+other) 
+2026-04-29 10:39:43,937 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module base_install_request (22/56) 
+2026-04-29 10:39:43,974 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module base_install_request: creating or updating 
+database tables 
+2026-04-29 10:39:44,042 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+base_install_request/security/ir.model.access.csv 
+2026-04-29 10:39:44,052 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+base_install_request/wizard/base_module_install_request_views.xml 
+2026-04-29 10:39:44,067 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading base_install_request/data/mail_template_data.xml 
+2026-04-29 10:39:44,072 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+base_install_request/data/mail_templates_module_install.xml 
+2026-04-29 10:39:44,075 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+base_install_request/views/ir_module_module_views.xml 
+2026-04-29 10:39:44,099 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module base_install_request loaded in 0.16s, 153 queries 
+(+153 other) 
+2026-04-29 10:39:44,099 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module google_gmail (23/56) 
+2026-04-29 10:39:44,135 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module google_gmail: creating or updating database 
+tables 
+2026-04-29 10:39:44,186 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading google_gmail/views/fetchmail_server_views.xml 
+2026-04-29 10:39:44,199 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading google_gmail/views/ir_mail_server_views.xml 
+2026-04-29 10:39:44,212 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading google_gmail/views/res_config_settings_views.xml 
+2026-04-29 10:39:44,238 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module google_gmail loaded in 0.14s, 124 queries (+124 
+other) 
+2026-04-29 10:39:44,238 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module iap_mail (24/56) 
+2026-04-29 10:39:44,273 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module iap_mail: creating or updating database tables 
+2026-04-29 10:39:44,305 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading iap_mail/data/mail_templates.xml 
+2026-04-29 10:39:44,318 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading iap_mail/views/iap_views.xml 
+2026-04-29 10:39:44,332 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module iap_mail loaded in 0.09s, 70 queries (+70 other) 
+2026-04-29 10:39:44,333 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module mail_bot (25/56) 
+2026-04-29 10:39:44,368 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module mail_bot: creating or updating database tables 
+2026-04-29 10:39:44,431 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail_bot/views/res_users_views.xml 
+2026-04-29 10:39:44,453 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading mail_bot/data/mailbot_data.xml 
+2026-04-29 10:39:44,466 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module mail_bot loaded in 0.13s, 127 queries (+127 
+other) 
+2026-04-29 10:39:44,466 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module phone_validation (26/56) 
+2026-04-29 10:39:44,552 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module phone_validation: creating or updating database 
+tables 
+2026-04-29 10:39:45,519 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading phone_validation/security/ir.model.access.csv 
+2026-04-29 10:39:45,527 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading phone_validation/views/phone_blacklist_views.xml 
+2026-04-29 10:39:45,549 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+phone_validation/wizard/phone_blacklist_remove_view.xml 
+2026-04-29 10:39:45,570 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module phone_validation loaded in 1.10s, 1590 queries 
+(+1590 other) 
+2026-04-29 10:39:45,570 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module privacy_lookup (27/56) 
+2026-04-29 10:39:45,609 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module privacy_lookup: creating or updating database 
+tables 
+2026-04-29 10:39:45,736 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+privacy_lookup/wizard/privacy_lookup_wizard_views.xml 
+2026-04-29 10:39:45,769 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading privacy_lookup/views/privacy_log_views.xml 
+2026-04-29 10:39:45,784 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading privacy_lookup/security/ir.model.access.csv 
+2026-04-29 10:39:45,795 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading privacy_lookup/data/ir_actions_server_data.xml 
+2026-04-29 10:39:45,816 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module privacy_lookup loaded in 0.25s, 247 queries (+247 
+other) 
+2026-04-29 10:39:45,816 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module product (28/56) 
+2026-04-29 10:39:45,885 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module product: creating or updating database tables 
+2026-04-29 10:39:46,553 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/data/product_data.xml 
+2026-04-29 10:39:46,584 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/security/product_security.xml 
+2026-04-29 10:39:46,727 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/security/ir.model.access.csv 
+2026-04-29 10:39:46,758 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/wizard/product_label_layout_views.xml 
+2026-04-29 10:39:46,771 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+product/wizard/update_product_attribute_value_views.xml 
+2026-04-29 10:39:46,776 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/views/product_tag_views.xml 
+2026-04-29 10:39:46,787 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/views/product_views.xml 
+2026-04-29 10:39:46,864 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/views/res_config_settings_views.xml 
+2026-04-29 10:39:46,878 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/views/product_attribute_views.xml 
+2026-04-29 10:39:46,909 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/views/product_attribute_value_views.xml 
+2026-04-29 10:39:46,913 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/views/product_category_views.xml 
+2026-04-29 10:39:46,924 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/views/product_combo_views.xml 
+2026-04-29 10:39:46,935 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/views/product_document_views.xml 
+2026-04-29 10:39:46,948 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/views/product_packaging_views.xml 
+2026-04-29 10:39:46,971 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/views/product_pricelist_item_views.xml 
+2026-04-29 10:39:46,988 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/views/product_pricelist_views.xml 
+2026-04-29 10:39:47,006 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/views/product_supplierinfo_views.xml 
+2026-04-29 10:39:47,025 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+product/views/product_template_attribute_line_views.xml 
+2026-04-29 10:39:47,030 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/views/product_template_views.xml 
+2026-04-29 10:39:47,057 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/views/res_country_group_views.xml 
+2026-04-29 10:39:47,063 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/views/res_partner_views.xml 
+2026-04-29 10:39:47,072 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/report/product_reports.xml 
+2026-04-29 10:39:47,090 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/report/product_product_templates.xml 
+2026-04-29 10:39:47,110 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/report/product_template_templates.xml 
+2026-04-29 10:39:47,122 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/report/product_packaging.xml 
+2026-04-29 10:39:47,126 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+product/report/product_pricelist_report_templates.xml 
+2026-04-29 10:39:47,133 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module product: loading demo 
+2026-04-29 10:39:47,133 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/data/product_attribute_demo.xml 
+2026-04-29 10:39:47,164 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/data/product_category_demo.xml 
+2026-04-29 10:39:47,199 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/data/product_demo.xml 
+2026-04-29 10:39:47,526 7680 INFO test_cable_pricing_product3 
+odoo.models.unlink: User #1 deleted mail.message records with IDs: [66] 
+2026-04-29 10:39:47,529 7680 INFO test_cable_pricing_product3 
+odoo.models.unlink: User #1 deleted product.product records with IDs: [9] 
+2026-04-29 10:39:47,577 7680 INFO test_cable_pricing_product3 
+odoo.models.unlink: User #1 deleted mail.message records with IDs: [68, 67] 
+2026-04-29 10:39:47,579 7680 INFO test_cable_pricing_product3 
+odoo.models.unlink: User #1 deleted product.product records with IDs: [10, 11] 
+2026-04-29 10:39:48,036 7680 INFO test_cable_pricing_product3 
+odoo.models.unlink: User #1 deleted mail.message records with IDs: [86] 
+2026-04-29 10:39:48,039 7680 INFO test_cable_pricing_product3 
+odoo.models.unlink: User #1 deleted product.product records with IDs: [22] 
+2026-04-29 10:39:48,106 7680 INFO test_cable_pricing_product3 
+odoo.models.unlink: User #1 deleted mail.message records with IDs: [72] 
+2026-04-29 10:39:48,108 7680 INFO test_cable_pricing_product3 
+odoo.models.unlink: User #1 deleted product.product records with IDs: [15] 
+2026-04-29 10:39:49,205 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/data/product_document_demo.xml 
+2026-04-29 10:39:49,221 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading product/data/product_supplierinfo_demo.xml 
+2026-04-29 10:39:49,497 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module product loaded in 3.68s, 3759 queries (+3759 
+other) 
+2026-04-29 10:39:49,497 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module resource_mail (29/56) 
+2026-04-29 10:39:49,558 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module resource_mail: creating or updating database 
+tables 
+2026-04-29 10:39:49,623 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module resource_mail loaded in 0.13s, 35 queries (+35 
+other) 
+2026-04-29 10:39:49,623 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module sales_team (30/56) 
+2026-04-29 10:39:49,684 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module sales_team: creating or updating database tables 
+2026-04-29 10:39:49,712 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.users.sale_team_id 
+2026-04-29 10:39:49,833 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sales_team/security/sales_team_security.xml 
+2026-04-29 10:39:50,027 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sales_team/security/ir.model.access.csv 
+2026-04-29 10:39:50,042 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sales_team/data/crm_team_data.xml 
+2026-04-29 10:39:50,088 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sales_team/views/crm_tag_views.xml 
+2026-04-29 10:39:50,106 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sales_team/views/crm_team_views.xml 
+2026-04-29 10:39:50,149 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sales_team/views/crm_team_member_views.xml 
+2026-04-29 10:39:50,186 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sales_team/views/mail_activity_views.xml 
+2026-04-29 10:39:50,190 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module sales_team: loading demo 
+2026-04-29 10:39:50,191 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sales_team/data/crm_team_demo.xml 
+2026-04-29 10:39:50,235 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sales_team/data/crm_tag_demo.xml 
+2026-04-29 10:39:50,266 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module sales_team loaded in 0.64s, 653 queries (+653 
+other) 
+2026-04-29 10:39:50,266 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module web_unsplash (31/56) 
+2026-04-29 10:39:50,328 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module web_unsplash: creating or updating database 
+tables 
+2026-04-29 10:39:50,413 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading web_unsplash/views/res_config_settings_view.xml 
+2026-04-29 10:39:50,448 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module web_unsplash loaded in 0.18s, 111 queries (+111 
+other) 
+2026-04-29 10:39:50,448 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module partner_autocomplete (32/56) 
+2026-04-29 10:39:50,616 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module partner_autocomplete: creating or updating 
+database tables 
+2026-04-29 10:39:50,744 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+partner_autocomplete/security/ir.model.access.csv 
+2026-04-29 10:39:50,756 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading partner_autocomplete/views/res_partner_views.xml 
+2026-04-29 10:39:50,777 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading partner_autocomplete/views/res_company_views.xml 
+2026-04-29 10:39:50,785 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+partner_autocomplete/views/res_config_settings_views.xml 
+2026-04-29 10:39:50,799 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading partner_autocomplete/data/cron.xml 
+2026-04-29 10:39:50,809 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading partner_autocomplete/data/iap_service_data.xml 
+2026-04-29 10:39:50,832 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module partner_autocomplete loaded in 0.38s, 207 queries 
+(+207 other) 
+2026-04-29 10:39:50,833 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module portal (33/56) 
+2026-04-29 10:39:50,890 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module portal: creating or updating database tables 
+2026-04-29 10:39:51,195 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading portal/security/ir.model.access.csv 
+2026-04-29 10:39:51,208 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading portal/data/mail_template_data.xml 
+2026-04-29 10:39:51,220 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading portal/data/mail_templates.xml 
+2026-04-29 10:39:51,227 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading portal/views/mail_templates_public.xml 
+2026-04-29 10:39:51,232 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading portal/views/portal_templates.xml 
+2026-04-29 10:39:51,333 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading portal/views/res_config_settings_views.xml 
+2026-04-29 10:39:51,350 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading portal/wizard/portal_share_views.xml 
+2026-04-29 10:39:51,361 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading portal/wizard/portal_wizard_views.xml 
+2026-04-29 10:39:51,403 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module portal loaded in 0.57s, 533 queries (+533 other) 
+2026-04-29 10:39:51,403 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module sms (34/56) 
+2026-04-29 10:39:51,501 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module sms: creating or updating database tables 
+2026-04-29 10:39:51,515 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of ir.actions.server.sms_template_id 
+2026-04-29 10:39:51,515 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of ir.actions.server.sms_method 
+2026-04-29 10:39:51,542 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.partner.phone_sanitized 
+2026-04-29 10:39:53,243 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sms/data/iap_service_data.xml 
+2026-04-29 10:39:53,249 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sms/data/ir_cron_data.xml 
+2026-04-29 10:39:53,257 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sms/wizard/sms_account_code_views.xml 
+2026-04-29 10:39:53,267 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sms/wizard/sms_account_phone_views.xml 
+2026-04-29 10:39:53,274 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sms/wizard/sms_account_sender_views.xml 
+2026-04-29 10:39:53,280 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sms/wizard/sms_composer_views.xml 
+2026-04-29 10:39:53,292 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sms/wizard/sms_template_preview_views.xml 
+2026-04-29 10:39:53,303 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sms/wizard/sms_resend_views.xml 
+2026-04-29 10:39:53,317 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sms/wizard/sms_template_reset_views.xml 
+2026-04-29 10:39:53,327 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sms/views/ir_actions_server_views.xml 
+2026-04-29 10:39:53,339 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sms/views/mail_notification_views.xml 
+2026-04-29 10:39:53,354 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sms/views/res_config_settings_views.xml 
+2026-04-29 10:39:53,367 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sms/views/res_partner_views.xml 
+2026-04-29 10:39:53,397 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sms/views/iap_account_views.xml 
+2026-04-29 10:39:53,409 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sms/views/sms_sms_views.xml 
+2026-04-29 10:39:53,435 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sms/views/sms_template_views.xml 
+2026-04-29 10:39:53,456 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sms/security/ir.model.access.csv 
+2026-04-29 10:39:53,483 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sms/security/sms_security.xml 
+2026-04-29 10:39:53,491 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module sms: loading demo 
+2026-04-29 10:39:53,491 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sms/data/sms_demo.xml 
+2026-04-29 10:39:53,497 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sms/data/mail_demo.xml 
+2026-04-29 10:39:53,567 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module sms loaded in 2.16s, 2349 queries (+2349 other) 
+2026-04-29 10:39:53,567 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module snailmail (35/56) 
+2026-04-29 10:39:53,640 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module snailmail: creating or updating database tables 
+2026-04-29 10:39:53,993 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading snailmail/data/iap_service_data.xml 
+2026-04-29 10:39:53,999 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading snailmail/data/snailmail_data.xml 
+2026-04-29 10:39:54,011 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading snailmail/views/report_assets.xml 
+2026-04-29 10:39:54,025 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading snailmail/views/snailmail_views.xml 
+2026-04-29 10:39:54,047 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+snailmail/wizard/snailmail_letter_format_error_views.xml 
+2026-04-29 10:39:54,058 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+snailmail/wizard/snailmail_letter_missing_required_fields_views.xml 
+2026-04-29 10:39:54,068 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading snailmail/security/ir.model.access.csv 
+2026-04-29 10:39:54,100 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module snailmail loaded in 0.53s, 478 queries (+478 
+other) 
+2026-04-29 10:39:54,100 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module auth_totp_portal (36/56) 
+2026-04-29 10:39:54,161 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module auth_totp_portal: creating or updating database 
+tables 
+2026-04-29 10:39:54,199 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading auth_totp_portal/security/security.xml 
+2026-04-29 10:39:54,218 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading auth_totp_portal/views/templates.xml 
+2026-04-29 10:39:54,245 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module auth_totp_portal loaded in 0.14s, 66 queries (+66 
+other) 
+2026-04-29 10:39:54,245 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module digest (37/56) 
+2026-04-29 10:39:54,312 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module digest: creating or updating database tables 
+2026-04-29 10:39:54,437 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading digest/security/ir.model.access.csv 
+2026-04-29 10:39:54,451 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading digest/data/digest_data.xml 
+2026-04-29 10:39:54,472 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading digest/data/digest_tips_data.xml 
+2026-04-29 10:39:54,489 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading digest/data/ir_cron_data.xml 
+2026-04-29 10:39:54,499 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading digest/data/res_config_settings_data.xml 
+2026-04-29 10:39:54,507 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading digest/views/digest_views.xml 
+2026-04-29 10:39:54,556 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading digest/views/digest_templates.xml 
+2026-04-29 10:39:54,562 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading digest/views/res_config_settings_views.xml 
+2026-04-29 10:39:54,602 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module digest loaded in 0.36s, 305 queries (+305 other) 
+2026-04-29 10:39:54,602 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module payment (38/56) 
+2026-04-29 10:39:54,688 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module payment: creating or updating database tables 
+2026-04-29 10:39:55,116 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading payment/data/ir_actions_server_data.xml 
+2026-04-29 10:39:55,124 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading payment/data/onboarding_data.xml 
+2026-04-29 10:39:55,130 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading payment/data/payment_method_data.xml 
+2026-04-29 10:39:56,803 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading payment/data/payment_provider_data.xml 
+2026-04-29 10:39:56,942 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading payment/data/payment_cron.xml 
+2026-04-29 10:39:56,952 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading payment/views/express_checkout_templates.xml 
+2026-04-29 10:39:56,960 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading payment/views/payment_form_templates.xml 
+2026-04-29 10:39:56,997 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading payment/views/portal_templates.xml 
+2026-04-29 10:39:57,034 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading payment/views/payment_provider_views.xml 
+2026-04-29 10:39:57,067 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading payment/views/payment_method_views.xml 
+2026-04-29 10:39:57,094 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading payment/views/payment_transaction_views.xml 
+2026-04-29 10:39:57,121 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading payment/views/payment_token_views.xml 
+2026-04-29 10:39:57,140 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading payment/views/res_partner_views.xml 
+2026-04-29 10:39:57,156 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading payment/security/ir.model.access.csv 
+2026-04-29 10:39:57,922 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading payment/security/payment_security.xml 
+2026-04-29 10:39:57,948 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading payment/wizards/payment_capture_wizard_views.xml 
+2026-04-29 10:39:57,956 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading payment/wizards/payment_link_wizard_views.xml 
+2026-04-29 10:39:57,964 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading payment/wizards/payment_onboarding_views.xml 
+2026-04-29 10:39:57,998 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module payment loaded in 3.40s, 2402 queries (+2402 
+other) 
+2026-04-29 10:39:57,998 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module spreadsheet (39/56) 
+2026-04-29 10:39:58,068 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module spreadsheet: creating or updating database 
+tables 
+2026-04-29 10:39:58,146 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+spreadsheet/views/public_readonly_spreadsheet_templates.xml 
+2026-04-29 10:39:58,171 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module spreadsheet loaded in 0.17s, 86 queries (+86 
+other) 
+2026-04-29 10:39:58,171 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module account (40/56) 
+2026-04-29 10:39:58,370 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module account: creating or updating database tables 
+2026-04-29 10:39:58,453 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.partner.bank.has_iban_warning 
+2026-04-29 10:39:58,453 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.partner.bank.has_money_transfer_warning 
+2026-04-29 10:39:58,576 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.company.account_fiscal_country_id 
+2026-04-29 10:39:58,576 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.company.invoice_terms_html 
+2026-04-29 10:40:00,999 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/security/account_security.xml 
+2026-04-29 10:40:01,470 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/security/ir.model.access.csv 
+2026-04-29 10:40:01,564 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/data/account_data.xml 
+2026-04-29 10:40:01,648 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/data/digest_data.xml 
+2026-04-29 10:40:01,657 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_report.xml 
+2026-04-29 10:40:01,677 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/data/mail_template_data.xml 
+2026-04-29 10:40:01,701 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/data/onboarding_data.xml 
+2026-04-29 10:40:01,735 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/data/account_tour.xml 
+2026-04-29 10:40:01,741 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/data/ir_sequence.xml 
+2026-04-29 10:40:01,746 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_payment_view.xml 
+2026-04-29 10:40:01,813 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+account/wizard/account_automatic_entry_wizard_views.xml 
+2026-04-29 10:40:01,825 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/wizard/account_autopost_bills_wizard.xml 
+2026-04-29 10:40:01,833 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/wizard/account_unreconcile_view.xml 
+2026-04-29 10:40:01,840 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/wizard/account_move_reversal_view.xml 
+2026-04-29 10:40:01,851 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/wizard/account_resequence_views.xml 
+2026-04-29 10:40:01,862 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+account/wizard/account_payment_register_views.xml 
+2026-04-29 10:40:01,874 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_move_views.xml 
+2026-04-29 10:40:02,327 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/wizard/setup_wizards_view.xml 
+2026-04-29 10:40:02,347 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_account_views.xml 
+2026-04-29 10:40:02,379 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_group_views.xml 
+2026-04-29 10:40:02,393 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_journal_views.xml 
+2026-04-29 10:40:02,444 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_account_tag_views.xml 
+2026-04-29 10:40:02,457 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_bank_statement_views.xml 
+2026-04-29 10:40:02,488 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_reconcile_model_views.xml 
+2026-04-29 10:40:02,521 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_tax_views.xml 
+2026-04-29 10:40:02,575 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_full_reconcile_views.xml 
+2026-04-29 10:40:02,583 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_payment_term_views.xml 
+2026-04-29 10:40:02,606 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_payment_method.xml 
+2026-04-29 10:40:02,614 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/res_partner_bank_views.xml 
+2026-04-29 10:40:02,639 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/report_statement.xml 
+2026-04-29 10:40:02,653 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/terms_template.xml 
+2026-04-29 10:40:02,666 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/wizard/account_validate_move_view.xml 
+2026-04-29 10:40:02,678 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/res_company_views.xml 
+2026-04-29 10:40:02,702 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/product_view.xml 
+2026-04-29 10:40:02,732 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_analytic_plan_views.xml 
+2026-04-29 10:40:02,742 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_analytic_account_views.xml 
+2026-04-29 10:40:02,757 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+account/views/account_analytic_distribution_model_views.xml 
+2026-04-29 10:40:02,772 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_analytic_line_views.xml 
+2026-04-29 10:40:02,801 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/report_invoice.xml 
+2026-04-29 10:40:02,838 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/report/account_invoice_report_view.xml 
+2026-04-29 10:40:02,872 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_cash_rounding_view.xml 
+2026-04-29 10:40:02,886 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/ir_actions_views.xml 
+2026-04-29 10:40:02,892 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/ir_module_views.xml 
+2026-04-29 10:40:02,900 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/base_document_layout_views.xml 
+2026-04-29 10:40:02,911 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/res_config_settings_views.xml 
+2026-04-29 10:40:02,953 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/partner_view.xml 
+2026-04-29 10:40:03,016 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_journal_dashboard_view.xml 
+2026-04-29 10:40:03,035 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_portal_templates.xml 
+2026-04-29 10:40:03,065 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+account/views/report_payment_receipt_templates.xml 
+2026-04-29 10:40:03,073 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/data/service_cron.xml 
+2026-04-29 10:40:03,084 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_incoterms_view.xml 
+2026-04-29 10:40:03,099 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/data/account_incoterms_data.xml 
+2026-04-29 10:40:03,111 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/digest_views.xml 
+2026-04-29 10:40:03,120 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/wizard/account_move_send_wizard.xml 
+2026-04-29 10:40:03,126 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+account/wizard/account_move_send_batch_wizard.xml 
+2026-04-29 10:40:03,132 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+account/report/account_hash_integrity_templates.xml 
+2026-04-29 10:40:03,137 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/res_currency.xml 
+2026-04-29 10:40:03,146 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_menuitem.xml 
+2026-04-29 10:40:03,270 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/wizard/account_secure_entries_wizard.xml 
+2026-04-29 10:40:03,282 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/mail_message_views.xml 
+2026-04-29 10:40:03,298 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/wizard/accrued_orders.xml 
+2026-04-29 10:40:03,305 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/bill_preview_template.xml 
+2026-04-29 10:40:03,311 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/data/account_reports_data.xml 
+2026-04-29 10:40:03,326 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/uom_uom_views.xml 
+2026-04-29 10:40:03,334 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/product_views.xml 
+2026-04-29 10:40:03,344 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/tests_shared_js_python.xml 
+2026-04-29 10:40:03,348 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/account_lock_exception_views.xml 
+2026-04-29 10:40:03,354 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/views/report_templates.xml 
+2026-04-29 10:40:03,368 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/wizard/account_merge_wizard_views.xml 
+2026-04-29 10:40:03,381 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/data/ir_config_parameter_data.xml 
+2026-04-29 10:40:03,384 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module account: loading demo 
+2026-04-29 10:40:03,384 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account/demo/account_demo.xml 
+2026-04-29 10:40:22,803 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module account loaded in 24.63s, 8279 queries (+8280 
+other) 
+2026-04-29 10:40:22,803 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module spreadsheet_dashboard (41/56) 
+2026-04-29 10:40:22,906 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module spreadsheet_dashboard: creating or updating 
+database tables 
+2026-04-29 10:40:23,068 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading spreadsheet_dashboard/security/security.xml 
+2026-04-29 10:40:23,199 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+spreadsheet_dashboard/security/ir.model.access.csv 
+2026-04-29 10:40:23,220 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+spreadsheet_dashboard/views/spreadsheet_dashboard_views.xml 
+2026-04-29 10:40:23,244 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading spreadsheet_dashboard/views/menu_views.xml 
+2026-04-29 10:40:23,277 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading spreadsheet_dashboard/data/dashboard.xml 
+2026-04-29 10:40:23,310 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module spreadsheet_dashboard loaded in 0.51s, 335 
+queries (+335 other) 
+2026-04-29 10:40:23,311 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module account_add_gln (42/56) 
+2026-04-29 10:40:23,403 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module account_add_gln: creating or updating database 
+tables 
+2026-04-29 10:40:23,508 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account_add_gln/views/res_partner_views.xml 
+2026-04-29 10:40:23,546 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module account_add_gln loaded in 0.24s, 104 queries 
+(+104 other) 
+2026-04-29 10:40:23,546 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module account_edi_ubl_cii (43/56) 
+2026-04-29 10:40:23,658 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module account_edi_ubl_cii: creating or updating 
+database tables 
+2026-04-29 10:40:23,682 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.partner.peppol_endpoint 
+2026-04-29 10:40:23,682 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of res.partner.peppol_eas 
+2026-04-29 10:40:23,889 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account_edi_ubl_cii/data/cii_22_templates.xml 
+2026-04-29 10:40:23,921 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account_edi_ubl_cii/data/ubl_20_templates.xml 
+2026-04-29 10:40:24,012 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+account_edi_ubl_cii/data/ir_config_parameter_data.xml 
+2026-04-29 10:40:24,018 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account_edi_ubl_cii/data/ubl_21_templates.xml 
+2026-04-29 10:40:24,064 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account_edi_ubl_cii/views/account_move_views.xml 
+2026-04-29 10:40:24,074 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account_edi_ubl_cii/views/res_partner_views.xml 
+2026-04-29 10:40:24,099 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+account_edi_ubl_cii/report/account_edi_ubl_cii_report_templates.xml 
+2026-04-29 10:40:24,177 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module account_edi_ubl_cii loaded in 0.63s, 443 queries 
+(+443 other) 
+2026-04-29 10:40:24,177 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module account_payment (44/56) 
+2026-04-29 10:40:24,283 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module account_payment: creating or updating database 
+tables 
+2026-04-29 10:40:24,314 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of account.payment.method.line.payment_provider_id 
+2026-04-29 10:40:24,541 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account_payment/data/ir_config_parameter.xml 
+2026-04-29 10:40:24,547 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account_payment/data/onboarding_data.xml 
+2026-04-29 10:40:24,561 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account_payment/security/ir.model.access.csv 
+2026-04-29 10:40:24,579 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account_payment/security/ir_rules.xml 
+2026-04-29 10:40:24,589 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account_payment/views/account_payment_menus.xml 
+2026-04-29 10:40:24,614 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+account_payment/views/account_portal_templates.xml 
+2026-04-29 10:40:24,678 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account_payment/views/account_move_views.xml 
+2026-04-29 10:40:24,700 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account_payment/views/account_journal_views.xml 
+2026-04-29 10:40:24,716 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account_payment/views/account_payment_views.xml 
+2026-04-29 10:40:24,729 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account_payment/views/payment_form_templates.xml 
+2026-04-29 10:40:24,738 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading account_payment/views/payment_provider_views.xml 
+2026-04-29 10:40:24,749 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+account_payment/views/payment_transaction_views.xml 
+2026-04-29 10:40:24,760 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+account_payment/wizards/account_payment_register_views.xml 
+2026-04-29 10:40:24,771 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+account_payment/wizards/payment_link_wizard_views.xml 
+2026-04-29 10:40:24,786 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+account_payment/wizards/payment_refund_wizard_views.xml 
+2026-04-29 10:40:24,794 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+account_payment/wizards/res_config_settings_views.xml 
+2026-04-29 10:40:24,851 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module account_payment loaded in 0.67s, 535 queries 
+(+535 other) 
+2026-04-29 10:40:24,851 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module l10n_us_account (45/56) 
+2026-04-29 10:40:24,995 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module l10n_us_account loaded in 0.14s, 14 queries (+14 
+other) 
+2026-04-29 10:40:24,995 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module snailmail_account (46/56) 
+2026-04-29 10:40:25,103 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module snailmail_account: creating or updating database 
+tables 
+2026-04-29 10:40:25,222 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+snailmail_account/views/res_config_settings_views.xml 
+2026-04-29 10:40:25,264 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module snailmail_account loaded in 0.27s, 119 queries 
+(+119 other) 
+2026-04-29 10:40:25,264 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module spreadsheet_account (47/56) 
+2026-04-29 10:40:25,370 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module spreadsheet_account: creating or updating 
+database tables 
+2026-04-29 10:40:25,457 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module spreadsheet_account loaded in 0.19s, 57 queries 
+(+57 other) 
+2026-04-29 10:40:25,457 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module spreadsheet_dashboard_account (48/56) 
+2026-04-29 10:40:25,566 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+spreadsheet_dashboard_account/data/dashboards.xml 
+2026-04-29 10:40:25,625 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module spreadsheet_dashboard_account loaded in 0.17s, 38 
+queries (+38 other) 
+2026-04-29 10:40:25,626 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module sale (49/56) 
+2026-04-29 10:40:25,781 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module sale: creating or updating database tables 
+2026-04-29 10:40:25,790 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of account.move.team_id 
+2026-04-29 10:40:25,889 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of product.template.service_type 
+2026-04-29 10:40:25,889 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of product.template.expense_policy 
+2026-04-29 10:40:25,889 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of product.template.invoice_policy 
+2026-04-29 10:40:26,687 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/security/ir.model.access.csv 
+2026-04-29 10:40:26,853 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/security/res_groups.xml 
+2026-04-29 10:40:26,928 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/security/ir_rules.xml 
+2026-04-29 10:40:27,078 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/report/account_invoice_report_views.xml 
+2026-04-29 10:40:27,102 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/report/ir_actions_report_templates.xml 
+2026-04-29 10:40:27,132 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/report/ir_actions_report.xml 
+2026-04-29 10:40:27,144 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/report/sale_report_views.xml 
+2026-04-29 10:40:27,190 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/data/ir_cron.xml 
+2026-04-29 10:40:27,202 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/data/ir_sequence_data.xml 
+2026-04-29 10:40:27,210 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/data/mail_activity_type_data.xml 
+2026-04-29 10:40:27,219 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/data/mail_message_subtype_data.xml 
+2026-04-29 10:40:27,241 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/data/mail_template_data.xml 
+2026-04-29 10:40:27,270 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/data/sale_tour.xml 
+2026-04-29 10:40:27,277 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/data/ir_config_parameter.xml 
+2026-04-29 10:40:27,284 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+sale/wizard/account_accrued_orders_wizard_views.xml 
+2026-04-29 10:40:27,291 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/wizard/mass_cancel_orders_views.xml 
+2026-04-29 10:40:27,302 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/wizard/payment_link_wizard_views.xml 
+2026-04-29 10:40:27,317 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/wizard/res_config_settings_views.xml 
+2026-04-29 10:40:27,349 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/wizard/sale_make_invoice_advance_views.xml 
+2026-04-29 10:40:27,363 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/wizard/sale_order_cancel_views.xml 
+2026-04-29 10:40:27,372 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/wizard/sale_order_discount_views.xml 
+2026-04-29 10:40:27,380 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/views/sale_order_views.xml 
+2026-04-29 10:40:27,565 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/views/account_views.xml 
+2026-04-29 10:40:27,614 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/views/crm_team_views.xml 
+2026-04-29 10:40:27,647 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/views/mail_activity_views.xml 
+2026-04-29 10:40:27,651 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/views/mail_activity_plan_views.xml 
+2026-04-29 10:40:27,655 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/views/payment_views.xml 
+2026-04-29 10:40:27,675 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/views/product_document_views.xml 
+2026-04-29 10:40:27,701 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/views/product_packaging_views.xml 
+2026-04-29 10:40:27,715 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/views/product_template_views.xml 
+2026-04-29 10:40:27,729 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/views/product_views.xml 
+2026-04-29 10:40:27,784 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/views/res_partner_views.xml 
+2026-04-29 10:40:27,839 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/views/sale_order_line_views.xml 
+2026-04-29 10:40:27,863 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/views/sale_portal_templates.xml 
+2026-04-29 10:40:27,915 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/views/utm_campaign_views.xml 
+2026-04-29 10:40:27,932 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/views/sale_menus.xml 
+2026-04-29 10:40:28,085 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module sale: loading demo 
+2026-04-29 10:40:28,085 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/data/product_demo.xml 
+2026-04-29 10:40:28,662 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale/data/sale_demo.xml 
+2026-04-29 10:41:02,950 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module sale loaded in 37.32s, 4682 queries (+4683 other) 
+2026-04-29 10:41:02,950 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module sale_async_emails (50/56) 
+2026-04-29 10:41:03,029 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module sale_async_emails: creating or updating database 
+tables 
+2026-04-29 10:41:03,112 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale_async_emails/data/ir_config_parameter.xml 
+2026-04-29 10:41:03,119 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale_async_emails/data/ir_cron.xml 
+2026-04-29 10:41:03,147 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module sale_async_emails loaded in 0.20s, 74 queries 
+(+74 other) 
+2026-04-29 10:41:03,147 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module sale_edi_ubl (51/56) 
+2026-04-29 10:41:03,216 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module sale_edi_ubl: creating or updating database 
+tables 
+2026-04-29 10:41:03,277 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module sale_edi_ubl loaded in 0.13s, 60 queries (+60 
+other) 
+2026-04-29 10:41:03,277 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module sale_management (52/56) 
+2026-04-29 10:41:03,430 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module sale_management: creating or updating database 
+tables 
+2026-04-29 10:41:03,665 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale_management/data/digest_data.xml 
+2026-04-29 10:41:03,676 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale_management/security/ir.model.access.csv 
+2026-04-29 10:41:03,690 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+sale_management/security/sale_management_security.xml 
+2026-04-29 10:41:03,721 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale_management/report/sale_report_templates.xml 
+2026-04-29 10:41:03,727 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+sale_management/views/sale_order_template_views.xml 
+2026-04-29 10:41:03,749 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale_management/views/digest_views.xml 
+2026-04-29 10:41:03,760 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+sale_management/views/res_config_settings_views.xml 
+2026-04-29 10:41:03,776 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale_management/views/sale_order_views.xml 
+2026-04-29 10:41:03,792 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale_management/views/sale_portal_templates.xml 
+2026-04-29 10:41:03,801 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale_management/views/sale_management_menus.xml 
+2026-04-29 10:41:03,809 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module sale_management: loading demo 
+2026-04-29 10:41:03,809 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+sale_management/data/sale_order_template_demo.xml 
+2026-04-29 10:41:03,893 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module sale_management loaded in 0.62s, 561 queries 
+(+561 other) 
+2026-04-29 10:41:03,894 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module sale_sms (53/56) 
+2026-04-29 10:41:03,998 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale_sms/security/ir.model.access.csv 
+2026-04-29 10:41:04,027 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale_sms/security/security.xml 
+2026-04-29 10:41:04,044 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module sale_sms loaded in 0.15s, 40 queries (+40 other) 
+2026-04-29 10:41:04,044 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module spreadsheet_dashboard_sale (54/56) 
+2026-04-29 10:41:04,130 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading spreadsheet_dashboard_sale/data/dashboards.xml 
+2026-04-29 10:41:04,185 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module spreadsheet_dashboard_sale loaded in 0.14s, 47 
+queries (+47 other) 
+2026-04-29 10:41:04,185 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module cable_pricing (55/56) 
+2026-04-29 10:41:04,276 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module cable_pricing: creating or updating database 
+tables 
+2026-04-29 10:41:04,409 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading cable_pricing/security/ir.model.access.csv 
+2026-04-29 10:41:04,423 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading cable_pricing/data/cable_price_break_data.xml 
+2026-04-29 10:41:04,434 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+cable_pricing/data/cable_connector_price_data.xml 
+2026-04-29 10:41:04,443 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading cable_pricing/data/cable_cable_price_data.xml 
+2026-04-29 10:41:04,449 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading cable_pricing/views/cable_pricing_views.xml 
+2026-04-29 10:41:04,505 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading cable_pricing/views/sale_order_views.xml 
+2026-04-29 10:41:04,536 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module cable_pricing loaded in 0.35s, 324 queries (+324 
+other) 
+2026-04-29 10:41:04,536 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Loading module sale_pdf_quote_builder (56/56) 
+2026-04-29 10:41:04,650 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: module sale_pdf_quote_builder: creating or updating 
+database tables 
+2026-04-29 10:41:04,660 7680 INFO test_cable_pricing_product3 odoo.models: 
+Prepare computation of product.document.form_field_ids 
+2026-04-29 10:41:04,845 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale_pdf_quote_builder/data/ir_cron.xml 
+2026-04-29 10:41:04,853 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+sale_pdf_quote_builder/data/sale_pdf_form_field.xml 
+2026-04-29 10:41:04,860 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+sale_pdf_quote_builder/report/ir_actions_report.xml 
+2026-04-29 10:41:04,866 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+sale_pdf_quote_builder/security/ir.model.access.csv 
+2026-04-29 10:41:04,878 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading sale_pdf_quote_builder/security/ir_rules.xml 
+2026-04-29 10:41:04,884 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+sale_pdf_quote_builder/views/product_document_views.xml 
+2026-04-29 10:41:04,895 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+sale_pdf_quote_builder/views/quotation_document_views.xml 
+2026-04-29 10:41:04,912 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+sale_pdf_quote_builder/views/sale_order_template_views.xml 
+2026-04-29 10:41:04,923 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+sale_pdf_quote_builder/views/sale_order_views.xml 
+2026-04-29 10:41:04,936 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+sale_pdf_quote_builder/views/sale_pdf_form_field_views.xml 
+2026-04-29 10:41:04,946 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+sale_pdf_quote_builder/views/sale_pdf_quote_builder_menus.xml 
+2026-04-29 10:41:04,951 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+sale_pdf_quote_builder/wizards/res_config_settings_views.xml 
+2026-04-29 10:41:04,971 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module sale_pdf_quote_builder: loading demo 
+2026-04-29 10:41:04,972 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: loading 
+sale_pdf_quote_builder/data/sale_pdf_quote_builder_demo.xml 
+2026-04-29 10:41:05,166 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Module sale_pdf_quote_builder loaded in 0.63s, 513 
+queries (+513 other) 
+2026-04-29 10:41:05,166 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: 56 modules loaded in 91.21s, 41473 queries (+41476 
+extra) 
+2026-04-29 10:41:05,830 7680 INFO test_cable_pricing_product3 
+odoo.modules.loading: Modules loaded. 
+2026-04-29 10:41:05,981 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: Registry changed, signaling through the database 
+2026-04-29 10:41:05,982 7680 INFO test_cable_pricing_product3 
+odoo.modules.registry: Registry loaded in 101.622s 
+2026-04-29 10:41:05,982 7680 INFO test_cable_pricing_product3 
+odoo.service.server: Starting post tests 
+2026-04-29 10:41:06,008 7680 INFO test_cable_pricing_product3 
+odoo.tests.common: C:\Users\niels\AppData\Local\Python\pythoncore-3.13-64\Lib\u
+nittest\mock.py:1611:__enter__ setting Users._crypt_context to <function 
+TransactionCase.setUpClass.<locals>._crypt_context at 0x000001DEC5A5FE20> 
+Stack (most recent call last):
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo-bin", line 8, in 
+<module>
+    odoo.cli.main()
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\cli\command.py", 
+line 76, in main
+    o.run(args)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\cli\server.py", line 
+182, in run
+    main(args)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\cli\server.py", line 
+175, in main
+    rc = odoo.service.server.start(preload=preload, stop=stop)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\service\server.py", 
+line 1462, in start
+    rc = server.run(preload, stop)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\service\server.py", 
+line 627, in run
+    rc = preload_registries(preload)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\service\server.py", 
+line 1393, in preload_registries
+    result = loader.run_suite(post_install_suite, 
+global_report=registry._assertion_report)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\loader.py", 
+line 118, in run_suite
+    suite(results)
+  File "C:\Users\niels\AppData\Local\Python\pythoncore-3.13-64\Lib\unittest\sui
+te.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\suite.py", 
+line 43, in run
+    self._handleClassSetUp(test, result)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\suite.py", 
+line 175, in _handleClassSetUp
+    super()._handleClassSetUp(test, result)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\suite.py", 
+line 65, in _handleClassSetUp
+    currentClass.setUpClass()
+  File "c:\users\niels\vsc_projects\custom-odoo\odoo\addons\custom_addons\cable
+_pricing\tests\test_cable_pricing.py", line 10, in setUpClass
+    super().setUpClass()
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\common.py", 
+line 1075, in setUpClass
+    cls.startClassPatcher(cls._crypt_context_patcher)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\common.py", 
+line 443, in startClassPatcher
+    mock = patcher.start()
+  File 
+"C:\Users\niels\AppData\Local\Python\pythoncore-3.13-64\Lib\unittest\mock.py", 
+line 1654, in start
+    result = self.__enter__()
+  File 
+"C:\Users\niels\AppData\Local\Python\pythoncore-3.13-64\Lib\unittest\mock.py", 
+line 1611, in __enter__
+    setattr(self.target, self.attribute, new_attr)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\common.py", 
+line 986, in metamodel_setattr
+    _logger.runbot(
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\netsvc.py", line 
+360, in runbot
+    self.log(logging.RUNBOT, message, *args, **kws)
+2026-04-29 10:41:06,016 7680 INFO test_cable_pricing_product3 
+odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [31987, 
+31988] 
+2026-04-29 10:41:06,016 7680 INFO test_cable_pricing_product3 
+odoo.models.unlink: User #1 deleted cable.connector.price records with IDs: 
+[1, 2] 
+2026-04-29 10:41:06,024 7680 INFO test_cable_pricing_product3 
+odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [31989, 
+31992, 31990, 31991] 
+2026-04-29 10:41:06,024 7680 INFO test_cable_pricing_product3 
+odoo.models.unlink: User #1 deleted cable.cable.price records with IDs: [1, 4, 
+2, 3] 
+2026-04-29 10:41:06,031 7680 INFO test_cable_pricing_product3 
+odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [31979, 
+31980, 31981, 31982, 31983, 31984, 31985, 31986] 
+2026-04-29 10:41:06,031 7680 INFO test_cable_pricing_product3 
+odoo.models.unlink: User #1 deleted cable.price.break records with IDs: [1, 2, 
+3, 4, 5, 6, 7, 8] 
+2026-04-29 10:41:06,077 7680 INFO test_cable_pricing_product3 
+odoo.addons.cable_pricing.tests.test_cable_pricing: Starting 
+TestCablePricing.test_compute_quote_price_matches_formula ... 
+2026-04-29 10:41:06,092 7680 INFO test_cable_pricing_product3 
+odoo.addons.cable_pricing.tests.test_cable_pricing: Starting 
+TestCablePricing.test_connector_price_tier_boundaries ... 
+2026-04-29 10:41:06,095 7680 INFO test_cable_pricing_product3 
+odoo.addons.cable_pricing.tests.test_cable_pricing: Starting 
+TestCablePricing.test_manual_price_override_is_preserved_after_qty_change ... 
+2026-04-29 10:41:06,171 7680 INFO test_cable_pricing_product3 
+odoo.addons.cable_pricing.tests.test_cable_pricing: Starting TestCablePricing.t
+est_non_cable_product_code_keeps_standard_pricing_without_error ... 
+2026-04-29 10:41:06,222 7680 INFO test_cable_pricing_product3 
+odoo.addons.cable_pricing.tests.test_cable_pricing: Starting 
+TestCablePricing.test_parse_cable_pn ... 
+2026-04-29 10:41:06,224 7680 INFO test_cable_pricing_product3 
+odoo.addons.cable_pricing.tests.test_cable_pricing: Starting 
+TestCablePricing.test_price_break_factor_selection ... 
+2026-04-29 10:41:06,232 7680 INFO test_cable_pricing_product3 
+odoo.addons.cable_pricing.tests.test_cable_pricing: Starting 
+TestCablePricing.test_sale_order_line_applies_cable_price_on_create ... 
+2026-04-29 10:41:06,270 7680 INFO test_cable_pricing_product3 
+odoo.addons.cable_pricing.tests.test_cable_pricing: Starting 
+TestCablePricing.test_sale_order_line_recomputes_cable_price_when_qty_changes 
+... 
+2026-04-29 10:41:06,322 7680 INFO test_cable_pricing_product3 
+odoo.tests.common: C:\Users\niels\AppData\Local\Python\pythoncore-3.13-64\Lib\u
+nittest\mock.py:1633:__exit__ setting Users._crypt_context to <function 
+Users._crypt_context at 0x000001DEA0B8F420> 
+Stack (most recent call last):
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo-bin", line 8, in 
+<module>
+    odoo.cli.main()
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\cli\command.py", 
+line 76, in main
+    o.run(args)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\cli\server.py", line 
+182, in run
+    main(args)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\cli\server.py", line 
+175, in main
+    rc = odoo.service.server.start(preload=preload, stop=stop)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\service\server.py", 
+line 1462, in start
+    rc = server.run(preload, stop)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\service\server.py", 
+line 627, in run
+    rc = preload_registries(preload)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\service\server.py", 
+line 1393, in preload_registries
+    result = loader.run_suite(post_install_suite, 
+global_report=registry._assertion_report)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\loader.py", 
+line 118, in run_suite
+    suite(results)
+  File "C:\Users\niels\AppData\Local\Python\pythoncore-3.13-64\Lib\unittest\sui
+te.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\suite.py", 
+line 49, in run
+    self._tearDownPreviousClass(None, result)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\suite.py", 
+line 190, in _tearDownPreviousClass
+    super()._tearDownPreviousClass(test, result)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\suite.py", 
+line 112, in _tearDownPreviousClass
+    previousClass.doClassCleanups()
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\case.py", line 
+247, in doClassCleanups
+    function(*args, **kwargs)
+  File 
+"C:\Users\niels\AppData\Local\Python\pythoncore-3.13-64\Lib\unittest\mock.py", 
+line 1667, in stop
+    return self.__exit__(None, None, None)
+  File 
+"C:\Users\niels\AppData\Local\Python\pythoncore-3.13-64\Lib\unittest\mock.py", 
+line 1633, in __exit__
+    setattr(self.target, self.attribute, self.temp_original)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\common.py", 
+line 986, in metamodel_setattr
+    _logger.runbot(
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\netsvc.py", line 
+360, in runbot
+    self.log(logging.RUNBOT, message, *args, **kws)
+2026-04-29 10:41:06,448 7680 INFO test_cable_pricing_product3 
+odoo.addons.base.models.ir_attachment: filestore gc 572 checked, 0 removed 
+2026-04-29 10:41:06,460 7680 INFO test_cable_pricing_product3 
+odoo.service.server: 8 post-tests in 0.48s, 417 queries 
+2026-04-29 10:41:06,460 7680 INFO test_cable_pricing_product3 
+odoo.tests.stats: cable_pricing: 10 tests 0.46s 417 queries 
+2026-04-29 10:41:06,460 7680 INFO test_cable_pricing_product3 
+odoo.tests.result: 0 failed, 0 error(s) of 8 tests when loading database 
+'test_cable_pricing_product3' 
+2026-04-29 10:41:06,460 7680 INFO test_cable_pricing_product3 
+odoo.service.server: Initiating shutdown 
+2026-04-29 10:41:06,460 7680 INFO test_cable_pricing_product3 
+odoo.service.server: Hit CTRL-C again or send a second signal to force the 
+shutdown. 
+2026-04-29 10:41:06,957 7680 INFO test_cable_pricing_product3 odoo.sql_db: 
+ConnectionPool(read/write;used=0/count=0/max=64): Closed 1 connections  

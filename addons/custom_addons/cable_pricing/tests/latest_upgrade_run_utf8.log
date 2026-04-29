@@ -1,0 +1,269 @@
+﻿python.exe : 2026-04-29 10:41:13,334 28312 INFO ? odoo: Odoo version 18.0 
+At line:1 char:62
++ ... Odoo/odoo"; & "c:/Users/niels/VSC_Projects/Custom-Odoo/odoo/.venv/Scr ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-04-29 10:4...o version 18.0  
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-04-29 10:41:13,334 28312 INFO ? odoo: Using configuration file at 
+C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo.conf 
+2026-04-29 10:41:13,334 28312 INFO ? odoo: addons paths: 
+['C:\\Users\\niels\\VSC_Projects\\Custom-Odoo\\odoo\\odoo\\addons', 
+'c:\\users\\niels\\appdata\\local\\openerp s.a\\odoo\\addons\\18.0', 
+'c:\\users\\niels\\vsc_projects\\custom-odoo\\odoo\\addons', 
+'c:\\users\\niels\\vsc_projects\\custom-odoo\\odoo\\addons\\custom_addons', 
+'c:\\users\\niels\\vsc_projects\\custom-odoo\\odoo\\odoo\\addons'] 
+2026-04-29 10:41:13,334 28312 INFO ? odoo: database: niels@localhost:5432 
+2026-04-29 10:41:13,433 28312 INFO ? 
+odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf 
+version of the reports. 
+2026-04-29 10:41:13,435 28312 INFO ? 
+odoo.addons.base.models.ir_actions_report: You need Wkhtmltoimage to generate 
+images from html. 
+2026-04-29 10:41:13,583 28312 INFO ? odoo.service.server: HTTP service 
+(werkzeug) running on LT-PF5PSGKG.ac-solutions.be:8069 
+2026-04-29 10:41:13,613 28312 INFO test_cable_pricing_product 
+odoo.tests.common: Importing test framework 
+2026-04-29 10:41:13,654 28312 INFO test_cable_pricing_product 
+odoo.modules.loading: loading 1 modules... 
+2026-04-29 10:41:13,657 28312 INFO test_cable_pricing_product 
+odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2026-04-29 10:41:13,670 28312 INFO test_cable_pricing_product 
+odoo.modules.loading: updating modules list 
+2026-04-29 10:41:13,673 28312 INFO test_cable_pricing_product 
+odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to 
+user __system__ #1 via n/a 
+2026-04-29 10:41:13,693 28312 WARNING test_cable_pricing_product 
+odoo.modules.module: Missing `license` key in manifest for 'KPI_project', 
+defaulting to LGPL-3 
+2026-04-29 10:41:14,152 28312 WARNING test_cable_pricing_product 
+odoo.modules.module: Missing `license` key in manifest for 
+'project_deadline_todo', defaulting to LGPL-3 
+2026-04-29 10:41:14,308 28312 INFO test_cable_pricing_product 
+odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on 
+['Cable Pricing'] to user __system__ #1 via n/a 
+2026-04-29 10:41:14,308 28312 INFO test_cable_pricing_product 
+odoo.addons.base.models.ir_module: ALLOW access to module.update_list on 
+['Cable Pricing'] to user __system__ #1 via n/a 
+2026-04-29 10:41:14,667 28312 INFO test_cable_pricing_product 
+odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] 
+to user __system__ #1 via n/a 
+2026-04-29 10:41:14,695 28312 INFO test_cable_pricing_product 
+odoo.modules.loading: loading 56 modules... 
+2026-04-29 10:41:15,319 28312 INFO test_cable_pricing_product 
+odoo.modules.loading: Loading module cable_pricing (55/56) 
+2026-04-29 10:41:15,450 28312 INFO test_cable_pricing_product 
+odoo.modules.registry: module cable_pricing: creating or updating database 
+tables 
+2026-04-29 10:41:15,522 28312 INFO test_cable_pricing_product 
+odoo.modules.loading: loading cable_pricing/security/ir.model.access.csv 
+2026-04-29 10:41:15,534 28312 INFO test_cable_pricing_product 
+odoo.modules.loading: loading cable_pricing/data/cable_price_break_data.xml 
+2026-04-29 10:41:15,541 28312 INFO test_cable_pricing_product 
+odoo.modules.loading: loading 
+cable_pricing/data/cable_connector_price_data.xml 
+2026-04-29 10:41:15,546 28312 INFO test_cable_pricing_product 
+odoo.modules.loading: loading cable_pricing/data/cable_cable_price_data.xml 
+2026-04-29 10:41:15,551 28312 INFO test_cable_pricing_product 
+odoo.modules.loading: loading cable_pricing/views/cable_pricing_views.xml 
+2026-04-29 10:41:15,590 28312 INFO test_cable_pricing_product 
+odoo.modules.loading: loading cable_pricing/views/sale_order_views.xml 
+2026-04-29 10:41:15,634 28312 INFO test_cable_pricing_product 
+odoo.modules.loading: Module cable_pricing loaded in 0.31s, 274 queries (+274 
+other) 
+2026-04-29 10:41:15,642 28312 INFO test_cable_pricing_product 
+odoo.modules.loading: 56 modules loaded in 0.95s, 274 queries (+274 extra) 
+2026-04-29 10:41:15,907 28312 INFO test_cable_pricing_product 
+odoo.modules.registry: verifying fields for every extended model 
+2026-04-29 10:41:16,256 28312 INFO test_cable_pricing_product 
+odoo.modules.loading: Modules loaded. 
+2026-04-29 10:41:16,262 28312 INFO test_cable_pricing_product 
+odoo.modules.registry: Registry changed, signaling through the database 
+2026-04-29 10:41:16,262 28312 INFO test_cable_pricing_product 
+odoo.modules.registry: Registry loaded in 2.678s 
+2026-04-29 10:41:16,262 28312 INFO test_cable_pricing_product 
+odoo.service.server: Starting post tests 
+2026-04-29 10:41:16,270 28312 INFO test_cable_pricing_product 
+odoo.tests.common: C:\Users\niels\AppData\Local\Python\pythoncore-3.13-64\Lib\u
+nittest\mock.py:1611:__enter__ setting Users._crypt_context to <function 
+TransactionCase.setUpClass.<locals>._crypt_context at 0x0000028B8874F920> 
+Stack (most recent call last):
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo-bin", line 8, in 
+<module>
+    odoo.cli.main()
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\cli\command.py", 
+line 76, in main
+    o.run(args)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\cli\server.py", line 
+182, in run
+    main(args)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\cli\server.py", line 
+175, in main
+    rc = odoo.service.server.start(preload=preload, stop=stop)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\service\server.py", 
+line 1462, in start
+    rc = server.run(preload, stop)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\service\server.py", 
+line 627, in run
+    rc = preload_registries(preload)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\service\server.py", 
+line 1393, in preload_registries
+    result = loader.run_suite(post_install_suite, 
+global_report=registry._assertion_report)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\loader.py", 
+line 118, in run_suite
+    suite(results)
+  File "C:\Users\niels\AppData\Local\Python\pythoncore-3.13-64\Lib\unittest\sui
+te.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\suite.py", 
+line 43, in run
+    self._handleClassSetUp(test, result)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\suite.py", 
+line 175, in _handleClassSetUp
+    super()._handleClassSetUp(test, result)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\suite.py", 
+line 65, in _handleClassSetUp
+    currentClass.setUpClass()
+  File "c:\users\niels\vsc_projects\custom-odoo\odoo\addons\custom_addons\cable
+_pricing\tests\test_cable_pricing.py", line 10, in setUpClass
+    super().setUpClass()
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\common.py", 
+line 1075, in setUpClass
+    cls.startClassPatcher(cls._crypt_context_patcher)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\common.py", 
+line 443, in startClassPatcher
+    mock = patcher.start()
+  File 
+"C:\Users\niels\AppData\Local\Python\pythoncore-3.13-64\Lib\unittest\mock.py", 
+line 1654, in start
+    result = self.__enter__()
+  File 
+"C:\Users\niels\AppData\Local\Python\pythoncore-3.13-64\Lib\unittest\mock.py", 
+line 1611, in __enter__
+    setattr(self.target, self.attribute, new_attr)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\common.py", 
+line 986, in metamodel_setattr
+    _logger.runbot(
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\netsvc.py", line 
+360, in runbot
+    self.log(logging.RUNBOT, message, *args, **kws)
+2026-04-29 10:41:16,279 28312 INFO test_cable_pricing_product 
+odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [31987, 
+31988] 
+2026-04-29 10:41:16,279 28312 INFO test_cable_pricing_product 
+odoo.models.unlink: User #1 deleted cable.connector.price records with IDs: 
+[1, 2] 
+2026-04-29 10:41:16,285 28312 INFO test_cable_pricing_product 
+odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [31989, 
+31992, 31990, 31991] 
+2026-04-29 10:41:16,285 28312 INFO test_cable_pricing_product 
+odoo.models.unlink: User #1 deleted cable.cable.price records with IDs: [1, 4, 
+2, 3] 
+2026-04-29 10:41:16,291 28312 INFO test_cable_pricing_product 
+odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [31979, 
+31980, 31981, 31982, 31983, 31984, 31985, 31986] 
+2026-04-29 10:41:16,291 28312 INFO test_cable_pricing_product 
+odoo.models.unlink: User #1 deleted cable.price.break records with IDs: [1, 2, 
+3, 4, 5, 6, 7, 8] 
+2026-04-29 10:41:16,379 28312 INFO test_cable_pricing_product 
+odoo.addons.cable_pricing.tests.test_cable_pricing: Starting 
+TestCablePricing.test_compute_quote_price_matches_formula ... 
+2026-04-29 10:41:16,394 28312 INFO test_cable_pricing_product 
+odoo.addons.cable_pricing.tests.test_cable_pricing: Starting 
+TestCablePricing.test_connector_price_tier_boundaries ... 
+2026-04-29 10:41:16,397 28312 INFO test_cable_pricing_product 
+odoo.addons.cable_pricing.tests.test_cable_pricing: Starting 
+TestCablePricing.test_manual_price_override_is_preserved_after_qty_change ... 
+2026-04-29 10:41:16,487 28312 INFO test_cable_pricing_product 
+odoo.addons.cable_pricing.tests.test_cable_pricing: Starting TestCablePricing.t
+est_non_cable_product_code_keeps_standard_pricing_without_error ... 
+2026-04-29 10:41:16,555 28312 INFO test_cable_pricing_product 
+odoo.addons.cable_pricing.tests.test_cable_pricing: Starting 
+TestCablePricing.test_parse_cable_pn ... 
+2026-04-29 10:41:16,558 28312 INFO test_cable_pricing_product 
+odoo.addons.cable_pricing.tests.test_cable_pricing: Starting 
+TestCablePricing.test_price_break_factor_selection ... 
+2026-04-29 10:41:16,564 28312 INFO test_cable_pricing_product 
+odoo.addons.cable_pricing.tests.test_cable_pricing: Starting 
+TestCablePricing.test_sale_order_line_applies_cable_price_on_create ... 
+2026-04-29 10:41:16,610 28312 INFO test_cable_pricing_product 
+odoo.addons.cable_pricing.tests.test_cable_pricing: Starting 
+TestCablePricing.test_sale_order_line_recomputes_cable_price_when_qty_changes 
+... 
+2026-04-29 10:41:16,662 28312 INFO test_cable_pricing_product 
+odoo.tests.common: C:\Users\niels\AppData\Local\Python\pythoncore-3.13-64\Lib\u
+nittest\mock.py:1633:__exit__ setting Users._crypt_context to <function 
+Users._crypt_context at 0x0000028BE756F420> 
+Stack (most recent call last):
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo-bin", line 8, in 
+<module>
+    odoo.cli.main()
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\cli\command.py", 
+line 76, in main
+    o.run(args)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\cli\server.py", line 
+182, in run
+    main(args)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\cli\server.py", line 
+175, in main
+    rc = odoo.service.server.start(preload=preload, stop=stop)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\service\server.py", 
+line 1462, in start
+    rc = server.run(preload, stop)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\service\server.py", 
+line 627, in run
+    rc = preload_registries(preload)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\service\server.py", 
+line 1393, in preload_registries
+    result = loader.run_suite(post_install_suite, 
+global_report=registry._assertion_report)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\loader.py", 
+line 118, in run_suite
+    suite(results)
+  File "C:\Users\niels\AppData\Local\Python\pythoncore-3.13-64\Lib\unittest\sui
+te.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\suite.py", 
+line 49, in run
+    self._tearDownPreviousClass(None, result)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\suite.py", 
+line 190, in _tearDownPreviousClass
+    super()._tearDownPreviousClass(test, result)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\suite.py", 
+line 112, in _tearDownPreviousClass
+    previousClass.doClassCleanups()
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\case.py", line 
+247, in doClassCleanups
+    function(*args, **kwargs)
+  File 
+"C:\Users\niels\AppData\Local\Python\pythoncore-3.13-64\Lib\unittest\mock.py", 
+line 1667, in stop
+    return self.__exit__(None, None, None)
+  File 
+"C:\Users\niels\AppData\Local\Python\pythoncore-3.13-64\Lib\unittest\mock.py", 
+line 1633, in __exit__
+    setattr(self.target, self.attribute, self.temp_original)
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\tests\common.py", 
+line 986, in metamodel_setattr
+    _logger.runbot(
+  File "C:\Users\niels\VSC_Projects\Custom-Odoo\odoo\odoo\netsvc.py", line 
+360, in runbot
+    self.log(logging.RUNBOT, message, *args, **kws)
+2026-04-29 10:41:16,676 28312 INFO test_cable_pricing_product 
+odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2026-04-29 10:41:16,690 28312 INFO test_cable_pricing_product 
+odoo.service.server: 8 post-tests in 0.43s, 416 queries 
+2026-04-29 10:41:16,691 28312 INFO test_cable_pricing_product 
+odoo.tests.stats: cable_pricing: 10 tests 0.43s 416 queries 
+2026-04-29 10:41:16,691 28312 INFO test_cable_pricing_product 
+odoo.tests.result: 0 failed, 0 error(s) of 8 tests when loading database 
+'test_cable_pricing_product' 
+2026-04-29 10:41:16,691 28312 INFO test_cable_pricing_product 
+odoo.service.server: Initiating shutdown 
+2026-04-29 10:41:16,691 28312 INFO test_cable_pricing_product 
+odoo.service.server: Hit CTRL-C again or send a second signal to force the 
+shutdown. 
+2026-04-29 10:41:17,147 28312 INFO test_cable_pricing_product odoo.sql_db: 
+ConnectionPool(read/write;used=0/count=0/max=64): Closed 1 connections  

@@ -12,6 +12,8 @@ class TestCablePricing(TransactionCase):
         cls.cable_model = cls.env['cable.cable.price']
         cls.break_model = cls.env['cable.price.break']
 
+        cls.connector_model.search([]).unlink()
+        cls.cable_model.search([]).unlink()
         cls.break_model.search([]).unlink()
         cls.break_a = cls.break_model.create({
             'tier': 'A',
@@ -58,6 +60,21 @@ class TestCablePricing(TransactionCase):
             'application': 'signal',
             'price_per_meter': 0.8,
         })
+        cls.partner = cls.env['res.partner'].create({
+            'name': 'Cable Pricing Customer',
+        })
+        unit_uom = cls.env.ref('uom.product_uom_unit')
+        cls.product = cls.env['product.product'].create({
+            'name': 'Cable Assembly',
+            'default_code': 'Z209BG P 00 A0 0150',
+            'type': 'consu',
+            'sale_ok': True,
+            'purchase_ok': False,
+            'uom_id': unit_uom.id,
+            'uom_po_id': unit_uom.id,
+            'list_price': 99.0,
+            'taxes_id': [(5, 0, 0)],
+        })
 
     def test_connector_price_tier_boundaries(self):
         self.assertEqual(self.connector._get_price_at_qty(1), 2.05)
@@ -96,3 +113,82 @@ class TestCablePricing(TransactionCase):
         self.assertAlmostEqual(result['purchase_price'], 2.17, places=6)
         self.assertAlmostEqual(result['sales_price'], 2.17, places=6)
         self.assertEqual(result['tier'], 'A')
+
+    def test_parse_cable_pn(self):
+        parsed = self.env['sale.order.line']._parse_cable_pn('Z209BG P 00 A0 0150')
+        self.assertEqual(parsed['connector_combined'], 'Z209BGP')
+        self.assertEqual(parsed['option_code'], '00')
+        self.assertEqual(parsed['ac_coding'], 'A0')
+        self.assertAlmostEqual(parsed['length_m'], 0.150, places=6)
+
+    def test_sale_order_line_applies_cable_price_on_create(self):
+        order = self.env['sale.order'].create({'partner_id': self.partner.id})
+        line = self.env['sale.order.line'].create({
+            'order_id': order.id,
+            'product_id': self.product.id,
+            'product_uom_qty': 10,
+        })
+
+        self.assertFalse(line.cable_pricing_error)
+        self.assertEqual(line.cable_tier, 'A')
+        self.assertEqual(line.cable_connector_combined, 'Z209BGP')
+        self.assertEqual(line.cable_ac_coding, 'A0')
+        self.assertAlmostEqual(line.cable_length_m, 0.150, places=6)
+        self.assertAlmostEqual(line.cable_purchase_price, 2.17, places=6)
+        self.assertAlmostEqual(line.price_unit, 2.17, places=6)
+
+    def test_sale_order_line_recomputes_cable_price_when_qty_changes(self):
+        order = self.env['sale.order'].create({'partner_id': self.partner.id})
+        line = self.env['sale.order.line'].create({
+            'order_id': order.id,
+            'product_id': self.product.id,
+            'product_uom_qty': 10,
+        })
+
+        line.write({'product_uom_qty': 60})
+
+        self.assertFalse(line.cable_pricing_error)
+        self.assertEqual(line.cable_tier, 'B')
+        self.assertAlmostEqual(line.cable_purchase_price, 2.07, places=6)
+        self.assertAlmostEqual(line.cable_sales_factor, 0.95, places=6)
+        self.assertAlmostEqual(line.price_unit, 1.97, places=2)
+
+    def test_non_cable_product_code_keeps_standard_pricing_without_error(self):
+        unit_uom = self.env.ref('uom.product_uom_unit')
+        non_cable_product = self.env['product.product'].create({
+            'name': 'Standard Product',
+            'default_code': 'STANDARD-001',
+            'type': 'consu',
+            'sale_ok': True,
+            'purchase_ok': False,
+            'uom_id': unit_uom.id,
+            'uom_po_id': unit_uom.id,
+            'list_price': 42.0,
+            'taxes_id': [(5, 0, 0)],
+        })
+
+        order = self.env['sale.order'].create({'partner_id': self.partner.id})
+        line = self.env['sale.order.line'].create({
+            'order_id': order.id,
+            'product_id': non_cable_product.id,
+            'product_uom_qty': 10,
+        })
+
+        self.assertFalse(line.cable_pricing_error)
+        self.assertEqual(line.cable_sales_price, 0.0)
+        self.assertFalse(line.cable_tier)
+        self.assertAlmostEqual(line.price_unit, 42.0, places=6)
+
+    def test_manual_price_override_is_preserved_after_qty_change(self):
+        order = self.env['sale.order'].create({'partner_id': self.partner.id})
+        line = self.env['sale.order.line'].create({
+            'order_id': order.id,
+            'product_id': self.product.id,
+            'product_uom_qty': 10,
+        })
+
+        line.write({'price_unit': 3.33})
+        line.write({'product_uom_qty': 60})
+
+        self.assertTrue(line.cable_manual_price)
+        self.assertAlmostEqual(line.price_unit, 3.33, places=2)
