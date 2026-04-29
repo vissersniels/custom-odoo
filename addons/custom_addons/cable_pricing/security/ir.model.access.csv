@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_cable_connector_price_salesman,cable.connector.price salesman,model_cable_connector_price,sales_team.group_sale_salesman,1,0,0,0
+access_cable_connector_price_manager,cable.connector.price manager,model_cable_connector_price,sales_team.group_sale_manager,1,1,1,1
+access_cable_cable_price_salesman,cable.cable.price salesman,model_cable_cable_price,sales_team.group_sale_salesman,1,0,0,0
+access_cable_cable_price_manager,cable.cable.price manager,model_cable_cable_price,sales_team.group_sale_manager,1,1,1,1
+access_cable_price_break_salesman,cable.price.break salesman,model_cable_price_break,sales_team.group_sale_salesman,1,0,0,0
+access_cable_price_break_manager,cable.price.break manager,model_cable_price_break,sales_team.group_sale_manager,1,1,1,1
