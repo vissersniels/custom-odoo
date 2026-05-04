@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_order_form_cable_pricing" model="ir.ui.view">
+        <field name="name">sale.order.form.cable.pricing</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']/form//field[@name='price_unit']" position="after">
+                <field name="cable_purchase_price" readonly="1"/>
+                <field name="cable_sales_factor" readonly="1"/>
+                <field name="cable_tier" readonly="1"/>
+                <field name="cable_pricing_error" readonly="1" invisible="not cable_pricing_error"/>
+            </xpath>
+
+            <xpath expr="//field[@name='order_line']/list//field[@name='price_unit']" position="after">
+                <field name="cable_purchase_price" optional="hide" readonly="1"/>
+                <field name="cable_tier" optional="hide" readonly="1"/>
+                <field name="cable_pricing_error" optional="hide" readonly="1"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

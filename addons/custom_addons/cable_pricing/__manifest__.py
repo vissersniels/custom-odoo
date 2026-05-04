@@ -10,6 +10,7 @@
         'data/cable_connector_price_data.xml',
         'data/cable_cable_price_data.xml',
         'views/cable_pricing_views.xml',
+        'views/sale_order_views.xml',
     ],
     'license': 'LGPL-3',
     'installable': True,
