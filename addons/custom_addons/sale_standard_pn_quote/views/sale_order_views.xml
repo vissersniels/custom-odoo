@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_order_form_standard_pn_quote" model="ir.ui.view">
+        <field name="name">sale.order.form.standard.pn.quote</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='customer_signature']" position="after">
+                <page string="Standard PN" name="standard_pn_quote">
+                    <group>
+                        <group string="Overview">
+                            <field name="standard_pn_line_count" readonly="1"/>
+                            <field name="standard_pn_has_errors" readonly="1"/>
+                        </group>
+                        <group string="Totals">
+                            <field name="standard_pn_amount_untaxed" readonly="1" widget="monetary"/>
+                            <field name="amount_total_with_standard_pn" readonly="1" widget="monetary"/>
+                        </group>
+                    </group>
+                    <div class="text-muted">
+                        Use Standard PN lines to price quote items without creating product records.
+                    </div>
+                    <field name="standard_pn_line_ids" context="{'default_order_id': id}" readonly="state == 'cancel' or locked">
+                        <list editable="bottom" string="Standard PN Lines" default_order="sequence, id">
+                            <field name="sequence" widget="handle"/>
+                            <field name="standard_pn"/>
+                            <field name="quantity"/>
+                            <field name="connector_combined" readonly="1" optional="hide"/>
+                            <field name="ac_coding" readonly="1" optional="hide"/>
+                            <field name="length_m" readonly="1" optional="hide"/>
+                            <field name="tier" readonly="1" optional="show"/>
+                            <field name="price_unit" readonly="1" optional="show"/>
+                            <field name="price_subtotal" readonly="1" optional="show"/>
+                            <field name="pricing_error" readonly="1" optional="show"/>
+                        </list>
+                        <form string="Standard PN Line">
+                            <group>
+                                <group>
+                                    <field name="standard_pn"/>
+                                    <field name="quantity"/>
+                                    <field name="tier" readonly="1"/>
+                                    <field name="pricing_error" readonly="1" invisible="not pricing_error"/>
+                                </group>
+                                <group>
+                                    <field name="connector_combined" readonly="1"/>
+                                    <field name="ac_coding" readonly="1"/>
+                                    <field name="length_m" readonly="1"/>
+                                    <field name="category" readonly="1"/>
+                                </group>
+                            </group>
+                            <group string="Pricing" col="4">
+                                <field name="purchase_price" readonly="1"/>
+                                <field name="sales_factor" readonly="1"/>
+                                <field name="price_unit" readonly="1"/>
+                                <field name="price_subtotal" readonly="1"/>
+                            </group>
+                        </form>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

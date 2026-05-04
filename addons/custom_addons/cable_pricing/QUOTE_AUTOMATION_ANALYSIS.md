@@ -320,3 +320,30 @@ In other words, pricing moved from isolated business calculation to operational 
 ## Short Conclusion
 
 The key evolution is from a standalone pricing engine to a full sales quotation automation pipeline. The second commit is where automation actually lands: it injects cable pricing into sale.order.line lifecycle, makes it visible in quotation UI, preserves manual edits, avoids affecting standard products, and verifies all of this with end-to-end tests.
+
+## Stakeholder Summary (Short Version)
+
+What changed:
+- Quotation line pricing for cable-coded products is now automated in Sales.
+- The system now parses the product code, looks up connector and cable master data, applies quantity-tier logic, and fills the line unit price automatically.
+- The test suite was expanded from 3 to 8 tests to validate end-to-end behavior, not only pricing math.
+
+Why this matters:
+- Sales users can create quotes faster with less manual calculation.
+- Pricing consistency improves because every line follows the same tier and factor rules.
+- Standard non-cable products are not impacted and keep normal Odoo pricing behavior.
+
+How the workflow works:
+1. User adds a product and quantity to a quotation line.
+2. The module parses the cable part number format.
+3. It retrieves connector and cable prices from master data.
+4. It calculates purchase and sales prices using quantity breaks.
+5. It writes the computed sales price to the quotation line automatically.
+
+Controls and safeguards:
+- Manual price overrides are respected and preserved on later quantity changes.
+- Invalid manual cable P/N input triggers a clear warning.
+- Missing pricing master data is surfaced through pricing error details.
+
+Business outcome:
+- The branch moves pricing from a manual or semi-manual process to a reliable automated quotation flow, while preserving user control where needed.

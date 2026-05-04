@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="report_saleorder_document_standard_pn" inherit_id="sale.report_saleorder_document">
+        <xpath expr="//table[contains(@class, 'o_main_table')]" position="after">
+            <t t-if="doc.standard_pn_line_ids">
+                <h4 class="mt-4">Standard PN</h4>
+                <table class="table table-sm table-borderless">
+                    <thead>
+                        <tr>
+                            <th class="text-start">Standard PN</th>
+                            <th class="text-end">Qty</th>
+                            <th class="text-end">Tier</th>
+                            <th class="text-end">Unit Price</th>
+                            <th class="text-end">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="doc.standard_pn_line_ids" t-as="pn_line">
+                            <tr t-if="not pn_line.pricing_error">
+                                <td>
+                                    <span t-field="pn_line.standard_pn"/>
+                                </td>
+                                <td class="text-end">
+                                    <span t-field="pn_line.quantity"/>
+                                </td>
+                                <td class="text-end">
+                                    <span t-field="pn_line.tier"/>
+                                </td>
+                                <td class="text-end">
+                                    <span t-field="pn_line.price_unit"/>
+                                </td>
+                                <td class="text-end">
+                                    <span t-field="pn_line.price_subtotal"/>
+                                </td>
+                            </tr>
+                            <tr t-if="pn_line.pricing_error">
+                                <td>
+                                    <span t-field="pn_line.standard_pn"/>
+                                </td>
+                                <td class="text-danger" colspan="4">
+                                    <span t-field="pn_line.pricing_error"/>
+                                </td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </t>
+        </xpath>
+
+        <xpath expr="//table[contains(@class, 'o_total_table')]" position="inside">
+            <tr t-if="doc.standard_pn_line_ids">
+                <td>Standard PN Total</td>
+                <td class="text-end">
+                    <span t-field="doc.standard_pn_amount_untaxed"/>
+                </td>
+            </tr>
+            <tr t-if="doc.standard_pn_line_ids" class="border-top fw-bold">
+                <td>Combined Quote Total</td>
+                <td class="text-end">
+                    <span t-field="doc.amount_total_with_standard_pn"/>
+                </td>
+            </tr>
+        </xpath>
+    </template>
+</odoo>
