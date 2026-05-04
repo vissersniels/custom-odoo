@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_cable_connector_price_list" model="ir.ui.view">
+        <field name="name">cable.connector.price.list</field>
+        <field name="model">cable.connector.price</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="connector_combined"/>
+                <field name="series"/>
+                <field name="application"/>
+                <field name="price_1_49"/>
+                <field name="price_50_299"/>
+                <field name="price_300_999"/>
+                <field name="price_1000_4999"/>
+                <field name="price_5000_9999"/>
+                <field name="price_10000_19999"/>
+                <field name="price_20000_49999"/>
+                <field name="price_50000_plus"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_cable_connector_price_form" model="ir.ui.view">
+        <field name="name">cable.connector.price.form</field>
+        <field name="model">cable.connector.price</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="connector_combined"/>
+                            <field name="series"/>
+                            <field name="application"/>
+                            <field name="currency_id" groups="base.group_multi_currency"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                    <group string="Connector Unit Price by Quantity Tier" col="4">
+                        <field name="price_1_49"/>
+                        <field name="price_50_299"/>
+                        <field name="price_300_999"/>
+                        <field name="price_1000_4999"/>
+                        <field name="price_5000_9999"/>
+                        <field name="price_10000_19999"/>
+                        <field name="price_20000_49999"/>
+                        <field name="price_50000_plus"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_cable_connector_price" model="ir.actions.act_window">
+        <field name="name">Connector Prices</field>
+        <field name="res_model">cable.connector.price</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="view_cable_cable_price_list" model="ir.ui.view">
+        <field name="name">cable.cable.price.list</field>
+        <field name="model">cable.cable.price</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="ac_coding"/>
+                <field name="description"/>
+                <field name="poles"/>
+                <field name="application"/>
+                <field name="price_per_meter"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_cable_cable_price_form" model="ir.ui.view">
+        <field name="name">cable.cable.price.form</field>
+        <field name="model">cable.cable.price</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="ac_coding"/>
+                        <field name="description"/>
+                        <field name="poles"/>
+                        <field name="application"/>
+                        <field name="price_per_meter"/>
+                        <field name="currency_id" groups="base.group_multi_currency"/>
+                        <field name="active"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_cable_cable_price" model="ir.actions.act_window">
+        <field name="name">Cable Prices</field>
+        <field name="res_model">cable.cable.price</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="view_cable_price_break_list" model="ir.ui.view">
+        <field name="name">cable.price.break.list</field>
+        <field name="model">cable.price.break</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="tier"/>
+                <field name="moq"/>
+                <field name="signal_factor"/>
+                <field name="pur_factor"/>
+                <field name="power_factor"/>
+                <field name="ea_factor"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_cable_price_break_form" model="ir.ui.view">
+        <field name="name">cable.price.break.form</field>
+        <field name="model">cable.price.break</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="tier"/>
+                        <field name="moq"/>
+                        <field name="active"/>
+                    </group>
+                    <group string="Sales Multipliers" col="4">
+                        <field name="signal_factor"/>
+                        <field name="pur_factor"/>
+                        <field name="power_factor"/>
+                        <field name="ea_factor"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_cable_price_break" model="ir.actions.act_window">
+        <field name="name">Price Breaks</field>
+        <field name="res_model">cable.price.break</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_cable_pricing_root"
+              name="Cable Pricing"
+              parent="sale.menu_sale_config"
+              groups="sales_team.group_sale_manager"
+              sequence="95"/>
+
+    <menuitem id="menu_cable_connector_price"
+              name="Connector Prices"
+              parent="menu_cable_pricing_root"
+              action="action_cable_connector_price"
+              groups="sales_team.group_sale_manager"
+              sequence="10"/>
+
+    <menuitem id="menu_cable_cable_price"
+              name="Cable Prices"
+              parent="menu_cable_pricing_root"
+              action="action_cable_cable_price"
+              groups="sales_team.group_sale_manager"
+              sequence="20"/>
+
+    <menuitem id="menu_cable_price_break"
+              name="Price Breaks"
+              parent="menu_cable_pricing_root"
+              action="action_cable_price_break"
+              groups="sales_team.group_sale_manager"
+              sequence="30"/>
+</odoo>
