@@ -11,6 +11,12 @@ APPLICATION_SELECTION = [
     ('ea', 'E&A'),
 ]
 
+PRICE_BREAK_SELECTION = [
+    ('signal', 'Signal'),
+    ('power', 'Power'),
+    ('ea', 'E&A'),
+]
+
 
 class SaleOrder(models.Model):
     _inherit = 'sale.order'
@@ -22,7 +28,13 @@ class SaleOrder(models.Model):
         copy=True,
     )
     standard_pn_amount_untaxed = fields.Monetary(
-        string='Standard PN Untaxed',
+        string='Untaxed Amount',
+        currency_field='currency_id',
+        compute='_compute_standard_pn_totals',
+        store=True,
+    )
+    standard_pn_amount_total = fields.Monetary(
+        string='Total',
         currency_field='currency_id',
         compute='_compute_standard_pn_totals',
         store=True,
@@ -49,6 +61,7 @@ class SaleOrder(models.Model):
         for order in self:
             standard_subtotal = sum(order.standard_pn_line_ids.mapped('price_subtotal'))
             order.standard_pn_amount_untaxed = standard_subtotal
+            order.standard_pn_amount_total = standard_subtotal
             order.amount_total_with_standard_pn = order.amount_total + standard_subtotal
             order.standard_pn_has_errors = any(order.standard_pn_line_ids.mapped('pricing_error'))
             order.standard_pn_line_count = len(order.standard_pn_line_ids)
@@ -66,6 +79,12 @@ class SaleOrderStandardPnLine(models.Model):
 
     standard_pn = fields.Char(string='Standard PN', required=True)
     quantity = fields.Float(string='Quantity', required=True, default=1.0, digits='Product Unit of Measure')
+    price_break_category = fields.Selection(
+        selection=PRICE_BREAK_SELECTION,
+        string='Price Break',
+        required=True,
+        default='signal',
+    )
 
     connector_combined = fields.Char(string='Connector Key', compute='_compute_pricing', store=True)
     option_code = fields.Char(string='Option Code', compute='_compute_pricing', store=True)
@@ -136,7 +155,7 @@ class SaleOrderStandardPnLine(models.Model):
             'length_m': int(length_mm) / 1000,
         }
 
-    @api.depends('quantity', 'standard_pn')
+    @api.depends('quantity', 'standard_pn', 'price_break_category')
     def _compute_pricing(self):
         ConnectorPrice = self.env['cable.connector.price']
         CablePrice = self.env['cable.cable.price']
@@ -146,7 +165,7 @@ class SaleOrderStandardPnLine(models.Model):
             line.option_code = False
             line.ac_coding = False
             line.length_m = 0.0
-            line.category = False
+            line.category = line.price_break_category
             line.tier = False
             line.purchase_price = 0.0
             line.sales_factor = 0.0
@@ -189,13 +208,13 @@ class SaleOrderStandardPnLine(models.Model):
                     ac_coding=parsed['ac_coding'],
                     qty=line.quantity,
                     length_m=parsed['length_m'],
-                    category=connector.application,
+                    category=line.price_break_category,
                 )
             except ValidationError as error:
                 line.pricing_error = error.args[0]
                 continue
 
-            line.category = connector.application
+            line.category = line.price_break_category
             line.tier = pricing['tier']
             line.purchase_price = pricing['purchase_price']
             line.sales_factor = pricing['sales_factor']

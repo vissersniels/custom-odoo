@@ -7,16 +7,6 @@
         <field name="arch" type="xml">
             <xpath expr="//page[@name='customer_signature']" position="after">
                 <page string="Standard PN" name="standard_pn_quote">
-                    <group>
-                        <group string="Overview">
-                            <field name="standard_pn_line_count" readonly="1"/>
-                            <field name="standard_pn_has_errors" readonly="1"/>
-                        </group>
-                        <group string="Totals">
-                            <field name="standard_pn_amount_untaxed" readonly="1" widget="monetary"/>
-                            <field name="amount_total_with_standard_pn" readonly="1" widget="monetary"/>
-                        </group>
-                    </group>
                     <div class="text-muted">
                         Use Standard PN lines to price quote items without creating product records.
                     </div>
@@ -25,6 +15,7 @@
                             <field name="sequence" widget="handle"/>
                             <field name="standard_pn"/>
                             <field name="quantity"/>
+                            <field name="price_break_category"/>
                             <field name="connector_combined" readonly="1" optional="hide"/>
                             <field name="ac_coding" readonly="1" optional="hide"/>
                             <field name="length_m" readonly="1" optional="hide"/>
@@ -38,6 +29,7 @@
                                 <group>
                                     <field name="standard_pn"/>
                                     <field name="quantity"/>
+                                    <field name="price_break_category"/>
                                     <field name="tier" readonly="1"/>
                                     <field name="pricing_error" readonly="1" invisible="not pricing_error"/>
                                 </group>
@@ -56,6 +48,21 @@
                             </group>
                         </form>
                     </field>
+                    <group name="standard_pn_note_group" col="6" class="mt-2 mt-md-0">
+                        <group colspan="4" class="order-1 order-lg-0">
+                            <field colspan="2" name="note" nolabel="1" placeholder="Terms and conditions..."/>
+                        </group>
+                        <group class="oe_subtotal_footer d-flex order-0 order-lg-1 flex-column gap-0 gap-sm-3" colspan="2" name="standard_pn_total">
+                            <label for="standard_pn_amount_untaxed" string="Untaxed Amount"/>
+                            <div class="o_row">
+                                <field name="standard_pn_amount_untaxed" readonly="1" widget="monetary" nolabel="1"/>
+                            </div>
+                            <label for="standard_pn_amount_total" string="Total"/>
+                            <div class="o_row">
+                                <field name="standard_pn_amount_total" readonly="1" widget="monetary" nolabel="1"/>
+                            </div>
+                        </group>
+                    </group>
                 </page>
             </xpath>
         </field>

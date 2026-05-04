@@ -69,6 +69,28 @@ class TestSaleStandardPnQuote(TransactionCase):
         self.assertAlmostEqual(line.price_unit, 0.0, places=6)
         self.assertAlmostEqual(line.price_subtotal, 0.0, places=6)
 
+    def test_selected_price_break_category_is_used(self):
+        order = self.env['sale.order'].create({'partner_id': self.partner.id})
+        line = self.env['sale.order.standard.pn.line'].create({
+            'order_id': order.id,
+            'standard_pn': 'X999AB C 00 ZZ 0100',
+            'quantity': 10,
+            'price_break_category': 'power',
+        })
+
+        expected = self.connector_model.compute_quote_price(
+            connector_combined='X999ABC',
+            ac_coding='ZZ',
+            qty=10,
+            length_m=0.1,
+            category='power',
+        )
+
+        self.assertFalse(line.pricing_error)
+        self.assertEqual(line.category, 'power')
+        self.assertAlmostEqual(line.sales_factor, expected['sales_factor'], places=6)
+        self.assertAlmostEqual(line.price_unit, expected['sales_price'], places=6)
+
     def test_order_total_includes_standard_pn_amount(self):
         order = self.env['sale.order'].create({'partner_id': self.partner.id})
         self.env['sale.order.standard.pn.line'].create({
@@ -78,6 +100,7 @@ class TestSaleStandardPnQuote(TransactionCase):
         })
 
         self.assertGreater(order.standard_pn_amount_untaxed, 0.0)
+        self.assertAlmostEqual(order.standard_pn_amount_total, order.standard_pn_amount_untaxed, places=6)
         self.assertAlmostEqual(
             order.amount_total_with_standard_pn,
             order.amount_total + order.standard_pn_amount_untaxed,

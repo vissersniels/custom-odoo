@@ -49,15 +49,15 @@
 
         <xpath expr="//table[contains(@class, 'o_total_table')]" position="inside">
             <tr t-if="doc.standard_pn_line_ids">
-                <td>Standard PN Total</td>
+                <td>Untaxed Amount</td>
                 <td class="text-end">
                     <span t-field="doc.standard_pn_amount_untaxed"/>
                 </td>
             </tr>
             <tr t-if="doc.standard_pn_line_ids" class="border-top fw-bold">
-                <td>Combined Quote Total</td>
+                <td>Total</td>
                 <td class="text-end">
-                    <span t-field="doc.amount_total_with_standard_pn"/>
+                    <span t-field="doc.standard_pn_amount_total"/>
                 </td>
             </tr>
         </xpath>

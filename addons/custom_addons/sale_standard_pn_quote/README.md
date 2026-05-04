@@ -22,6 +22,7 @@ Each line captures:
 
 - Standard PN string
 - Quantity
+- Price break selector (Signal, Power, E&A)
 - Parsed PN metadata (connector key, AC coding, length)
 - Tier, factor, purchase price, unit price, subtotal
 - Pricing error (if parsing or master data lookup fails)
@@ -38,14 +39,17 @@ View extension:
 The tab includes:
 
 - editable list/form of Standard PN lines
+- a selectable price break category per line (Signal, Power, E&A)
 - automatic computed pricing fields
-- summary counters and totals
+- bottom quote-style totals block with Untaxed Amount and Total
+- terms and conditions area
 
 ### 3) Quote-level totals for Standard PN flow
 
 Added on sale.order:
 
 - standard_pn_amount_untaxed
+- standard_pn_amount_total
 - amount_total_with_standard_pn
 - standard_pn_line_count
 - standard_pn_has_errors
@@ -61,7 +65,7 @@ Report extension:
 
 - Adds a Standard PN section in sale.report_saleorder_document
 - Prints Standard PN, Qty, Tier, Unit Price, and Amount
-- Prints Standard PN Total and Combined Quote Total in total summary block
+- Prints Untaxed Amount and Total in the standard quote total style
 
 ## Pricing Workflow (End-to-End)
 
@@ -74,6 +78,7 @@ Report extension:
    - cable.connector.price by connector key
    - cable.cable.price by AC coding
 6. System calls cable.connector.price.compute_quote_price(...).
+   - Category is taken from the selected price break option (Signal, Power, E&A).
 7. System stores computed pricing on Standard PN line:
    - purchase price
    - sales factor
