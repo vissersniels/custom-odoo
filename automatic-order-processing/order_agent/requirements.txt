@@ -1,0 +1,4 @@
+pdfplumber
+structlog
+python-dotenv
+pydantic>=2,<3
