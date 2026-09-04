@@ -14,3 +14,11 @@ python odoo-bin -u <module> -d niels
 ## Upgrade Modules
 
 python odoo-bin -u <module> -d niels --config=odoo.conf  
+
+## automatic-order-processing info
+
+ODOO_DB=niels
+
+ODOO_USERNAME=niels@ac-solutions.be
+
+ODOO_API_KEY= order_api_key.txt
